@@ -10,3 +10,7 @@ git commit -m "first commit"
 git remote add origin url
 git push -u origin master
 ```
+拉取指定分支：
+```bash
+git clone -b 分支名称 URL
+```
