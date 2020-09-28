@@ -3,10 +3,9 @@
           <nav>
             <h3>页面</h3>
             <ul>
-              <li><a href="{{ SITEURL }}">Accueil</a></li>
-              <li><a href="{{ SITEURL }}/categories.html">Catégories</a></li>
-              <li><a href="{{ SITEURL }}/archives.html">Archives</a></li>
-              <li><a href="{{ SITEURL }}/tags.html">Mots-clés</a></li>
+              <li><a href="{{ SITEURL }}/categories.html">分类</a></li>
+              <li><a href="{{ SITEURL }}/archives.html">归档</a></li>
+              <li><a href="{{ SITEURL }}/tags.html">标签</a></li>
             {% if MENUITEMS %}
               {% for name, uri in MENUITEMS %}
               <li><a href="{{ uri|format(SITEURL)}}">{{ name }}</a></li>
