@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=endge, chrome=IE8" />
     <meta name="viewport" content="initial-scale=1.0, width=device-width, user-scalable=no" />
-    <title>Java是世界上最烂的语言 — «Web»</title>
+    <title>Java是世界上最烂的语言 — Articles avec le mot clé « Termux »</title>
     <!--[if lte IE 8]><script type="text/javascript" src="/theme/js/html5shiv.js"></script><![endif]-->
     <link rel="stylesheet" type="text/css" href="/theme/css/skeleton.css" />
     <link rel="stylesheet" type="text/css" href="/theme/css/theme.css" />
@@ -24,39 +24,47 @@
       
       <div id="page-body">
         <section id="page-main" role="main">
-      <h1 class="small-title">该分类下的所有文章<i>«Web»</i> :</h1>
+      <h1 class="small-title">Articles avec le mot clé « Termux » :</h1>
      
         
       <article class="post">
         <header class="post-header">
           <h1>
             <a rel="bookmark"
-               href="/gitji-ben-yong-fa.html"
-               title="Lien permanent vers «Git基本用法»">
-               Git基本用法
+               href="/termuxpei-zhi.html"
+               title="Lien permanent vers «Termux配置»">
+               Termux配置
             </a>
           </h1>
           <div class="meta">
 <!-- includes/article_meta.html -->
-             <time datetime="2020-09-28T00:00:00+08:00">Mon 28 September 2020</time>
-            分类： «<a href="/category/web.html">Web</a>»              <br />Mots-clés:              <a rel="tag" href="/tag/git.html">Git</a>          </div>
+             <time datetime="2020-10-04T00:00:00+08:00">Sun 04 October 2020</time>
+            分类： «<a href="/category/linux.html">Linux</a>»              <br />Mots-clés:              <a rel="tag" href="/tag/termux.html">Termux</a>,               <a rel="tag" href="/tag/vim.html">Vim</a>          </div>
         </header>
         <div class="post-content"> 
-          <div class="highlight"><pre><span></span><span class="err">git init</span>
-<span class="err">git add --all</span>
-<span class="err">#git add output</span>
-<span class="err">git commit -m &quot;first commit&quot;</span>
-<span class="err">git remote add origin url</span>
-<span class="err">git push -u origin master</span>
+          <h2>Termux额外按键</h2>
+<p><code>vim .termux/termux.properties</code></p>
+<div class="highlight"><pre><span></span><span class="err">extra-keys = [[&#39;ESC&#39;,&#39;/&#39;,&#39;-&#39;,&#39;HOME&#39;,&#39;UP&#39;,&#39;END&#39;,&#39;PGUP&#39;],[&#39;TAB&#39;,&#39;CTRL&#39;,&#39;ALT&#39;,&#39;LEFT&#39;,&#39;DOWN&#39;,&#39;RIGHT&#39;,&#39;PGDN&#39;]]</span>
 </pre></div>
 
 
-<p>拉取指定分支：</p>
-<div class="highlight"><pre><span></span>git clone -b 分支名称 URL
+<h2>Zsh</h2>
+<div class="highlight"><pre><span></span><span class="n">pkg</span> <span class="n">install</span> <span class="n">zsh</span>
+<span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">gitee</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">idkzr</span><span class="o">/</span><span class="n">termux</span><span class="o">-</span><span class="n">ohmyzsh</span>
+<span class="o">./</span><span class="n">termux</span><span class="o">-</span><span class="n">ohmyzsh</span><span class="o">/</span><span class="k">tool</span><span class="o">/</span><span class="n">install</span><span class="o">.</span><span class="n">sh</span>
 </pre></div>
+
+
+<h3>zshrc</h3>
+<div class="highlight"><pre><span></span><span class="err">alias e=exit                             alias nxcf=&quot;vim ../usr/etc/nginx/nginx.conf&quot;</span>
+</pre></div>
+
+
+<h2>Vim</h2>
+<div class="highlight"><pre><span></span><span class="err">pkg install …</span></pre></div>
         </div>
         <footer class="post-footer">
-          <a class="readmore" href="/gitji-ben-yong-fa.html">Lire la suite...</a>
+          <a class="readmore" href="/termuxpei-zhi.html">Lire la suite...</a>
         </footer>
       </article>
       <nav id="pagination">   <!-- <span id="first_page" class="a inactive">&#60;&#60;</span>
@@ -81,7 +89,7 @@
             <h3>分类</h3>
             <ul>
               <li><a href="/category/linux.html">Linux</a></li>
-              <li class="active"><a href="/category/web.html">Web</a></li>
+              <li><a href="/category/web.html">Web</a></li>
             </ul>
           </nav>
 
