@@ -1,6 +1,7 @@
 Title:Termux配置
 Date:2020-10-04
 Category:Linux
+Tags:Termux,Vim
 
 ## Termux额外按键
 
@@ -22,4 +23,7 @@ alias e=exit                             alias nxcf="vim ../usr/etc/nginx/nginx.
 ```
 
 ## Vim
+```
+pkg install vim-python
+```
 ### 插件
