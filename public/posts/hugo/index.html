@@ -19,7 +19,7 @@
     
     <title>Hugo笔记</title>
     <meta name="description" content="一个无人知晓の小站( ╹▽╹ )">
-    <meta name="keywords" content='hugo'>
+    <meta name="keywords" content='hugo, utterances'>
 
     <meta property="og:url" content="https://javabullshit.github.io/posts/hugo/">
     <meta property="og:type" content="website">
@@ -167,6 +167,8 @@
         
             <li class="post-tag"><a href="/tags/hugo">hugo</a></li>
         
+            <li class="post-tag"><a href="/tags/utterances">utterances</a></li>
+        
         </ul>
     </div>
 
@@ -188,7 +190,19 @@
 <li>在github上安装uterances app：https://github.com/apps/utterances，安装时选择刚才创建的repository</li>
 <li>进入官网，填入刚才的repository，然后复制下面的代码填到hugo模板里的相对应位置，一般在是<code>post.html</code>里面找</li>
 </ol>
-<p>进入官网，</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://utteranc.es/client.js&#34;</span>                                               <span style="color:#a6e22e">repo</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;javabullshit/comments&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">issue-term</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;pathname&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">theme</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;github-light&#34;</span>                     <span style="color:#a6e22e">crossorigin</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;anonymous&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">async</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">script</span>&gt;
+</span></span></code></pre></div><ol start="4">
+<li>编辑config.toml，加入以下内容：</li>
+</ol>
+<pre tabindex="0"><code>[params.utteranc]
+enable = true
+repo = &#34;javabullshit/comments&#34;
+issueTerm = &#34;pathname&#34;
+</code></pre><p>进入官网，</p>
 <h2 id="页内超链接新标签页打开">页内超链接新标签页打开</h2>
 <p>需要修改主题文件夹中的3个文件</p>
 <ul>
@@ -224,15 +238,19 @@
 
         </p>
 
+    </div>
+
+    <br>
+    <br>
+
 <script src="https://utteranc.es/client.js"
-        repo="https://github.com/javabullshit/comments"
+        repo="javabullshit/comments"
         issue-term="pathname"
         theme="github-light"
         crossorigin="anonymous"
         async>
 </script>
 
-    </div>
 <script type="text/javascript">
 	addaTarget("post-content-id");
 </script>
