@@ -2,7 +2,7 @@
 title: "Hugo笔记"
 date: 2022-03-02T10:50:27Z
 type: post
-tags: ["hugo"]
+tags: ["hugo","utterances"]
 ---
 
 ## 文档
@@ -22,6 +22,21 @@ https://gohugo.io/documentation/
 1. 在github上创建一个公开的repository
 2. 在github上安装uterances app：https://github.com/apps/utterances，安装时选择刚才创建的repository
 3. 进入官网，填入刚才的repository，然后复制下面的代码填到hugo模板里的相对应位置，一般在是`post.html`里面找
+```html
+<script src="https://utteranc.es/client.js"                                               repo="javabullshit/comments"
+        issue-term="pathname"
+        theme="github-light"                     crossorigin="anonymous"
+        async>
+</script>
+```
+
+4. 编辑config.toml，加入以下内容：
+```
+[params.utteranc]
+enable = true
+repo = "javabullshit/comments"
+issueTerm = "pathname"
+```
 
 进入官网，
 

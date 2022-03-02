@@ -6,6 +6,11 @@ theme = 'gokarna'
 # Automatically generate robots.txt
 enableRobotsTXT = true
 
+[params.utteranc]
+enable = true
+repo = "javabullshit/comments"
+issueTerm = "pathname"
+
 [params]
   avatarURL = "/images/ahri.jpg"
 
