@@ -13,7 +13,7 @@ https://gohugo.io/documentation/
 
 几个不错的评论插件:
  - [Valine](https://valine.js.org/): 传统的昵称、邮箱、网址式
- - [utterances](https://utteranc.es/): 配github登录评，论置起来最简单
+ - [utterances](https://utteranc.es/): github登录评论，配置起来最简单
  - [gitalk](https://gitalk.github.io/): github登录评论，美观
  - [disqus](https://disqus.com/): 老外用的多，有收费功能
 
