@@ -17,22 +17,22 @@
     
 
     
-    <title>Termux</title>
-    <meta name="description" content="">
-    <meta name="keywords" content=''>
+    <title>安装Termux后要做的</title>
+    <meta name="description" content="一个无人知晓の小站( ╹▽╹ )">
+    <meta name="keywords" content='termux'>
 
     <meta property="og:url" content="https://javabullshit.github.io/posts/termux/">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Termux">
-    <meta property="og:description" content="">
-    <meta property="og:image" content="">
+    <meta property="og:title" content="安装Termux后要做的">
+    <meta property="og:description" content="一个无人知晓の小站( ╹▽╹ )">
+    <meta property="og:image" content="/images/ahri.jpg">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Termux">
-    <meta name="twitter:description" content="">
+    <meta name="twitter:title" content="安装Termux后要做的">
+    <meta name="twitter:description" content="一个无人知晓の小站( ╹▽╹ )">
     <meta property="twitter:domain" content="https://javabullshit.github.io/posts/termux/">
     <meta property="twitter:url" content="https://javabullshit.github.io/posts/termux/">
-    <meta name="twitter:image" content="">
+    <meta name="twitter:image" content="/images/ahri.jpg">
 
     
     <link rel="canonical" href="https://javabullshit.github.io/posts/termux/" />
@@ -47,6 +47,15 @@
 
     
     
+<script type="text/javascript">
+	function addaTarget(id) {
+		var aTags = document.getElementById(id).getElementsByTagName("a");
+		for (i = 0; i < aTags.length; i++) {
+		var aTags_item = aTags[i];
+		aTags_item.target = "_blank";
+    }
+}
+</script>
 </head>
 <body>
         <script type="text/javascript">
@@ -56,12 +65,42 @@
     <nav class="header-nav">
 
         
+        <div class="avatar">
+            <a href="https://javabullshit.github.io">
+                <img src="/images/ahri.jpg" alt="avatar" />
+            </a>
+        </div>
+        
 
         <div class="nav-title">
-            <a class="nav-brand" href="https://javabullshit.github.io">JavaBullShit</a>
+            <a class="nav-brand" href="https://javabullshit.github.io">Ahri Love</a>
         </div>
 
         <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="/posts/"> Posts </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="/tags/"> Tags </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="/gallery"> Gallery </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="/friends"> Friends </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="/about"> About </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://github.com/JavaBullShit"><span data-feather='github'></span>  </a>
+            </div>
             
 
             <span class="nav-icons-divider"></span>
@@ -80,6 +119,30 @@
             
             <ul class="nav-hamburger-list visibility-hidden">
                 
+                <li class="nav-item">
+                    <a href="/posts/"> Posts </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="/tags/"> Tags </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="/gallery"> Gallery </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="/friends"> Friends </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="/about"> About </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://github.com/JavaBullShit"><span data-feather='github'></span>  </a>
+                </li>
+                
                 <li class="nav-item dark-theme-toggle">
                     <a>
                         <span id="theme-toggle-icon" data-feather="moon"></span>
@@ -91,15 +154,75 @@
     </nav>
 </header>
 <main id="content">
-    
+    <div class="post container">
+
+    <div class="post-header-section">
+        <h1>安装Termux后要做的</h1>
+        <small role="doc-subtitle"></small>
+        <p class="post-date">
+            March 2, 2022
+        </p>
+
+        <ul class="post-tags">
+        
+            <li class="post-tag"><a href="/tags/termux">termux</a></li>
+        
+        </ul>
+    </div>
+
+    <div class="post-content" id="post-content-id">
+        <p>
+            <p>键盘方案</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>extra-keys <span style="color:#f92672">=</span> <span style="color:#f92672">[</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span><span style="color:#f92672">[</span><span style="color:#e6db74">&#39;ESC&#39;</span>,<span style="color:#e6db74">&#39;/&#39;</span>,<span style="color:#e6db74">&#39;[&#39;</span>,<span style="color:#e6db74">&#39;]&#39;</span>,<span style="color:#e6db74">&#39;UP&#39;</span>,<span style="color:#e6db74">&#39;=&#39;</span>,<span style="color:#e6db74">&#39;PGUP&#39;</span>,<span style="color:#e6db74">&#39;DEL&#39;</span><span style="color:#f92672">]</span>, <span style="color:#ae81ff">\ </span> 
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span><span style="color:#e6db74">&#39;TAB&#39;</span>,<span style="color:#e6db74">&#39;CTRL&#39;</span>,<span style="color:#e6db74">&#39;ALT&#39;</span>,<span style="color:#e6db74">&#39;LEFT&#39;</span>,<span style="color:#e6db74">&#39;DOWN&#39;</span>,<span style="color:#e6db74">&#39;RIGHT&#39;</span>,<span style="color:#e6db74">&#39;PGDN&#39;</span>,<span style="color:#e6db74">&#39;BKSP&#39;</span><span style="color:#f92672">]</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span><span style="color:#f92672">]</span>
+</span></span></code></pre></div><p>zsh</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sh -c <span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$(</span>curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh<span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span>
+</span></span></code></pre></div><p>国内源</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sed -i <span style="color:#e6db74">&#39;s@^\(deb.*stable main\)$@#\1\ndeb https://mirrors.tuna.tsinghua.edu.cn/termux/termux-packages-24 stable main@&#39;</span> $PREFIX/etc/apt/sources.list
+</span></span><span style="display:flex;"><span>sed -i <span style="color:#e6db74">&#39;s@^\(deb.*games stable\)$@#\1\ndeb https://mirrors.tuna.tsinghua.edu.cn/termux/game-packages-24 games stable@&#39;</span> $PREFIX/etc/apt/sources.list.d/game.list
+</span></span><span style="display:flex;"><span>sed -i <span style="color:#e6db74">&#39;s@^\(deb.*science stable\)$@#\1\ndeb https://mirrors.tuna.tsinghua.edu.cn/termux/science-packages-24 science stable@&#39;</span> $PREFIX/etc/apt/sources.list.d/science.list
+</span></span><span style="display:flex;"><span>apt update <span style="color:#f92672">&amp;&amp;</span> apt upgrade
+</span></span></code></pre></div><p>安装虚拟机</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># ubuntu</span>
+</span></span><span style="display:flex;"><span>pkg install wget openssl-tool proot -y <span style="color:#f92672">&amp;&amp;</span> hash -r <span style="color:#f92672">&amp;&amp;</span> wget https://raw.githubusercontent.com/EXALAB/AnLinux-Resources/master/Scripts/Installer/Ubuntu/ubuntu.sh <span style="color:#f92672">&amp;&amp;</span> bash ubuntu.sh
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># kali Linux</span>
+</span></span><span style="display:flex;"><span>pkg install wget openssl-tool proot -y <span style="color:#f92672">&amp;&amp;</span> hash -r <span style="color:#f92672">&amp;&amp;</span> wget https://raw.githubusercontent.com/EXALAB/AnLinux-Resources/master/Scripts/Installer/Kali/kali.sh <span style="color:#f92672">&amp;&amp;</span> bash kali.sh
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 安装xfce4桌面</span>
+</span></span><span style="display:flex;"><span>wget https://raw.githubusercontent.com/EXALAB/AnLinux-Resources/master/Scripts/DesktopEnvironment/Apt/Xfce4/de-apt-xfce4.sh <span style="color:#f92672">&amp;&amp;</span> bash de-apt-xfce4.sh
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 安装lxde桌面</span>
+</span></span><span style="display:flex;"><span>wget https://raw.githubusercontent.com/EXALAB/AnLinux-Resources/master/Scripts/DesktopEnvironment/Apt/LXDE/de-apt-lxde.sh <span style="color:#f92672">&amp;&amp;</span> bash de-apt-lxde.sh
+</span></span></code></pre></div>
+        </p>
+
+<script src="https://utteranc.es/client.js"
+        repo="https://github.com/javabullshit/comments"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+
+    </div>
+<script type="text/javascript">
+	addaTarget("post-content-id");
+</script>
+</div>
+
+
 
     
 
         </main><footer class="footer">
     <span>&copy; 2022 </span>
     <span>
-        Made with &#10084;&#65039; using <a target="_blank" href="https://github.com/526avijitgupta/gokarna">Gokarna</a>
+        Build with &#10084;&#65039; using <a target="_blank" href="https://docs.github.com/cn/pages/getting-started-with-github-pages/creating-a-github-pages-site">Github Pages</a>
     </span>
 </footer>
+
 </body>
 </html>

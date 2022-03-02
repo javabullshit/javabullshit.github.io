@@ -64,6 +64,6 @@ https://gohugo.io/documentation/
 ### 方案1
 
 目录及分支
- - `./`: `sources`
+ - `./`: `source`
  - `public`: `html`
 

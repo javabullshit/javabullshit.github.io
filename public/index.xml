@@ -1,33 +1,43 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>JavaBullShit</title>
+    <title>Ahri Love</title>
     <link>https://javabullshit.github.io/</link>
-    <description>Recent content on JavaBullShit</description>
+    <description>Recent content on Ahri Love</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 02 Mar 2022 07:49:50 +0000</lastBuildDate><atom:link href="https://javabullshit.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 02 Mar 2022 10:50:27 +0000</lastBuildDate><atom:link href="https://javabullshit.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Git</title>
-      <link>https://javabullshit.github.io/posts/git/</link>
-      <pubDate>Wed, 02 Mar 2022 07:49:50 +0000</pubDate>
+      <title>Hugo笔记</title>
+      <link>https://javabullshit.github.io/posts/hugo/</link>
+      <pubDate>Wed, 02 Mar 2022 10:50:27 +0000</pubDate>
       
-      <guid>https://javabullshit.github.io/posts/git/</guid>
-      <description>初始化 # 以当前目录为项目创建仓库 git init # 创建一个目录作为项目仓库 git init [name] 提交至暂存区 git add [file] git commit -m [msg] 分支 # 创建分支 git branch [name] # 查看分支，-r：远程分支，-a：所有分支 git branch 参数 # 切换分支 git checkout 分支名 同步 # 添加远程仓库 git remote add [仓库] [仓库url] # 同步 git push 仓库 分支 其他 加上--global表示全局，不加就仅针对当前项目
-# 合并分支 git branch -M/m [name] # 缓存账号密码 git config --global credential.helper store/cache #可以更改默认的密码缓存时限 git config --global credential.helper &amp;#39;cache --timeout=36000&amp;#39; </description>
+      <guid>https://javabullshit.github.io/posts/hugo/</guid>
+      <description>文档 https://gohugo.io/documentation/
+评论插件的选择 几个不错的评论插件:
+ Valine: 传统的昵称、邮箱、网址式 utterances: 配github登录评，论置起来最简单 gitalk: github登录评论，美观 disqus: 老外用的多，有收费功能  人生苦短，我用utterances  在github上创建一个公开的repository 在github上安装uterances app：https://github.com/apps/utterances，安装时选择刚才创建的repository 进入官网，填入刚才的repository，然后复制下面的代码填到hugo模板里的相对应位置，一般在是post.html里面找  进入官网，
+页内超链接新标签页打开 需要修改主题文件夹中的3个文件
+ head.html post.html page.html  在&amp;lt;body&amp;gt;之前加入javascript代码：
+&amp;lt;script type=&amp;#34;text/javascript&amp;#34;&amp;gt; 	function addaTarget(id) { 	var aTags = document.getElementById(id).getElementsByTagName(&amp;#34;a&amp;#34;); 	for (i = 0; i &amp;lt; aTags.length; i++) { 	var aTags_item = aTags[i]; 	aTags_item.target = &amp;#34;_blank&amp;#34;;  } } &amp;lt;/script&amp;gt; 在文章页和独立页的html文件中找到{{ .Content }}，并在把它包裹住的&amp;lt;div&amp;gt;加入一个名为post-content-id的id,通常是这样：
+&amp;lt;div class=&amp;#34;post-content&amp;#34; id=&amp;#34;post-content-id&amp;#34;&amp;gt;  {{ .</description>
     </item>
     
     <item>
-      <title>Termux</title>
-      <link>https://javabullshit.github.io/posts/termux/</link>
-      <pubDate>Wed, 02 Mar 2022 05:46:44 +0000</pubDate>
+      <title>Friends</title>
+      <link>https://javabullshit.github.io/friends/</link>
+      <pubDate>Wed, 02 Mar 2022 09:58:26 +0000</pubDate>
       
-      <guid>https://javabullshit.github.io/posts/termux/</guid>
-      <description>键盘方案
-extra-keys = [ \ [&amp;#39;ESC&amp;#39;,&amp;#39;/&amp;#39;,&amp;#39;[&amp;#39;,&amp;#39;]&amp;#39;,&amp;#39;UP&amp;#39;,&amp;#39;=&amp;#39;,&amp;#39;PGUP&amp;#39;,&amp;#39;DEL&amp;#39;], \ [&amp;#39;TAB&amp;#39;,&amp;#39;CTRL&amp;#39;,&amp;#39;ALT&amp;#39;,&amp;#39;LEFT&amp;#39;,&amp;#39;DOWN&amp;#39;,&amp;#39;RIGHT&amp;#39;,&amp;#39;PGDN&amp;#39;,&amp;#39;BKSP&amp;#39;] \ ] zsh
-sh -c &amp;#34;$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&amp;#34; 国内源
-sed -i &amp;#39;s@^\(deb.*stable main\)$@#\1\ndeb https://mirrors.tuna.tsinghua.edu.cn/termux/termux-packages-24 stable main@&amp;#39; $PREFIX/etc/apt/sources.list sed -i &amp;#39;s@^\(deb.*games stable\)$@#\1\ndeb https://mirrors.tuna.tsinghua.edu.cn/termux/game-packages-24 games stable@&amp;#39; $PREFIX/etc/apt/sources.list.d/game.list sed -i &amp;#39;s@^\(deb.*science stable\)$@#\1\ndeb https://mirrors.tuna.tsinghua.edu.cn/termux/science-packages-24 science stable@&amp;#39; $PREFIX/etc/apt/sources.list.d/science.list apt update &amp;amp;&amp;amp; apt upgrade 安装虚拟机
-# ubuntu pkg install wget openssl-tool proot -y &amp;amp;&amp;amp; hash -r &amp;amp;&amp;amp; wget https://raw.githubusercontent.com/EXALAB/AnLinux-Resources/master/Scripts/Installer/Ubuntu/ubuntu.sh &amp;amp;&amp;amp; bash ubuntu.sh  # kali Linux pkg install wget openssl-tool proot -y &amp;amp;&amp;amp; hash -r &amp;amp;&amp;amp; wget https://raw.</description>
+      <guid>https://javabullshit.github.io/friends/</guid>
+      <description>Star  Ahri Love：一个无人知晓の小站( ╹▽╹ )  </description>
+    </item>
+    
+    <item>
+      <title>Gallery</title>
+      <link>https://javabullshit.github.io/gallery/</link>
+      <pubDate>Wed, 02 Mar 2022 09:07:28 +0000</pubDate>
+      
+      <guid>https://javabullshit.github.io/gallery/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -36,8 +46,31 @@ sed -i &amp;#39;s@^\(deb.*stable main\)$@#\1\ndeb https://mirrors.tuna.tsinghua.
       <pubDate>Wed, 02 Mar 2022 05:37:15 +0000</pubDate>
       
       <guid>https://javabullshit.github.io/about/</guid>
-      <description>直到有一天我想起了我的这个github账号！
-nojava域名过期了，用静态博客了。</description>
+      <description>直到有一天我想起了我的这个github账号
+Projects  Pihpi 一款Typecho主题  </description>
+    </item>
+    
+    <item>
+      <title>Git常用</title>
+      <link>https://javabullshit.github.io/posts/git/</link>
+      <pubDate>Wed, 02 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://javabullshit.github.io/posts/git/</guid>
+      <description>初始化 # 以当前目录为项目创建仓库 git init  # 创建一个目录作为项目仓库 git init [name] 提交至暂存区 git add [file] git commit -m [msg] 分支 # 创建分支 git branch [name]  # 查看分支，-r：远程分支，-a：所有分支 git branch 参数  # 切换分支 git checkout 分支名 同步 # 添加远程仓库 git remote add [仓库] [仓库url]  # 同步 git push [仓库] [分支]  # 同步到本地 git pull [仓库] [分支] 其他 加上--global表示全局，不加就仅针对当前项目
+# 合并分支 git branch -M/m [name]  # 缓存账号密码 git config --global credential.</description>
+    </item>
+    
+    <item>
+      <title>安装Termux后要做的</title>
+      <link>https://javabullshit.github.io/posts/termux/</link>
+      <pubDate>Wed, 02 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://javabullshit.github.io/posts/termux/</guid>
+      <description>键盘方案
+extra-keys = [ \ [&amp;#39;ESC&amp;#39;,&amp;#39;/&amp;#39;,&amp;#39;[&amp;#39;,&amp;#39;]&amp;#39;,&amp;#39;UP&amp;#39;,&amp;#39;=&amp;#39;,&amp;#39;PGUP&amp;#39;,&amp;#39;DEL&amp;#39;], \  [&amp;#39;TAB&amp;#39;,&amp;#39;CTRL&amp;#39;,&amp;#39;ALT&amp;#39;,&amp;#39;LEFT&amp;#39;,&amp;#39;DOWN&amp;#39;,&amp;#39;RIGHT&amp;#39;,&amp;#39;PGDN&amp;#39;,&amp;#39;BKSP&amp;#39;] \ ] zsh
+sh -c &amp;#34;$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&amp;#34; 国内源
+sed -i &amp;#39;s@^\(deb.*stable main\)$@#\1\ndeb https://mirrors.tuna.tsinghua.edu.cn/termux/termux-packages-24 stable main@&amp;#39; $PREFIX/etc/apt/sources.list sed -i &amp;#39;s@^\(deb.*games stable\)$@#\1\ndeb https://mirrors.tuna.tsinghua.edu.cn/termux/game-packages-24 games stable@&amp;#39; $PREFIX/etc/apt/sources.list.d/game.list sed -i &amp;#39;s@^\(deb.*science stable\)$@#\1\ndeb https://mirrors.tuna.tsinghua.edu.cn/termux/science-packages-24 science stable@&amp;#39; $PREFIX/etc/apt/sources.list.d/science.list apt update &amp;amp;&amp;amp; apt upgrade 安装虚拟机
+# ubuntu pkg install wget openssl-tool proot -y &amp;amp;&amp;amp; hash -r &amp;amp;&amp;amp; wget https://raw.githubusercontent.com/EXALAB/AnLinux-Resources/master/Scripts/Installer/Ubuntu/ubuntu.sh &amp;amp;&amp;amp; bash ubuntu.sh  # kali Linux pkg install wget openssl-tool proot -y &amp;amp;&amp;amp; hash -r &amp;amp;&amp;amp; wget https://raw.</description>
     </item>
     
   </channel>

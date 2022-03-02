@@ -43,7 +43,10 @@ git checkout 分支名
 git remote add [仓库] [仓库url]
 
 # 同步
-git push 仓库 分支
+git push [仓库] [分支]
+
+# 同步到本地
+git pull [仓库] [分支]
 
 ```
 
@@ -92,11 +95,11 @@ git push -u origin main
 ```bash
 git init
 git config ...(用户&邮箱$缓存)
-git branch -M sources
+git branch -M source
 git add *
 git commit -m "msg"
 git remote add origin [url]
-git push origin sources
+git push origin source
 ```
 
 网页目录命令：
