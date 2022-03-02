@@ -5,6 +5,26 @@ type: post
 tags: ["hugo"]
 ---
 
+## 文档
+
+https://gohugo.io/documentation/
+
+## 评论插件的选择
+
+几个不错的评论插件:
+ - [Valine](https://valine.js.org/): 传统的昵称、邮箱、网址式
+ - [utterances](https://utteranc.es/): 配github登录评，论置起来最简单
+ - [gitalk](https://gitalk.github.io/): github登录评论，美观
+ - [disqus](https://disqus.com/): 老外用的多，有收费功能
+
+### 人生苦短，我用utterances
+
+1. 在github上创建一个公开的repository
+2. 在github上安装uterances app：https://github.com/apps/utterances，安装时选择刚才创建的repository
+3. 进入官网，填入刚才的repository，然后复制下面的代码填到hugo模板里的相对应位置，一般在是`post.html`里面找
+
+进入官网，
+
 ## 页内超链接新标签页打开
 
 需要修改主题文件夹中的3个文件
@@ -38,3 +58,12 @@ tags: ["hugo"]
 	addaTarget("post-content-id");
 </script>
 ```
+
+## Git结构
+
+### 方案1
+
+目录及分支
+ - `./`: `sources`
+ - `public`: `html`
+
