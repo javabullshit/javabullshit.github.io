@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>JavaBullShit</title>
+    <link>https://javabullshit.github.io/</link>
+    <description>Recent content on JavaBullShit</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 02 Mar 2022 07:49:50 +0000</lastBuildDate><atom:link href="https://javabullshit.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git</title>
+      <link>https://javabullshit.github.io/posts/git/</link>
+      <pubDate>Wed, 02 Mar 2022 07:49:50 +0000</pubDate>
+      
+      <guid>https://javabullshit.github.io/posts/git/</guid>
+      <description>初始化 # 以当前目录为项目创建仓库 git init # 创建一个目录作为项目仓库 git init [name] 提交至暂存区 git add [file] git commit -m [msg] 分支 # 创建分支 git branch [name] # 查看分支，-r：远程分支，-a：所有分支 git branch 参数 # 切换分支 git checkout 分支名 同步 # 添加远程仓库 git remote add [仓库] [仓库url] # 同步 git push 仓库 分支 其他 加上--global表示全局，不加就仅针对当前项目
+# 合并分支 git branch -M/m [name] # 缓存账号密码 git config --global credential.helper store/cache #可以更改默认的密码缓存时限 git config --global credential.helper &amp;#39;cache --timeout=36000&amp;#39; </description>
+    </item>
+    
+    <item>
+      <title>Termux</title>
+      <link>https://javabullshit.github.io/posts/termux/</link>
+      <pubDate>Wed, 02 Mar 2022 05:46:44 +0000</pubDate>
+      
+      <guid>https://javabullshit.github.io/posts/termux/</guid>
+      <description>键盘方案
+extra-keys = [ \ [&amp;#39;ESC&amp;#39;,&amp;#39;/&amp;#39;,&amp;#39;[&amp;#39;,&amp;#39;]&amp;#39;,&amp;#39;UP&amp;#39;,&amp;#39;=&amp;#39;,&amp;#39;PGUP&amp;#39;,&amp;#39;DEL&amp;#39;], \ [&amp;#39;TAB&amp;#39;,&amp;#39;CTRL&amp;#39;,&amp;#39;ALT&amp;#39;,&amp;#39;LEFT&amp;#39;,&amp;#39;DOWN&amp;#39;,&amp;#39;RIGHT&amp;#39;,&amp;#39;PGDN&amp;#39;,&amp;#39;BKSP&amp;#39;] \ ] zsh
+sh -c &amp;#34;$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&amp;#34; 国内源
+sed -i &amp;#39;s@^\(deb.*stable main\)$@#\1\ndeb https://mirrors.tuna.tsinghua.edu.cn/termux/termux-packages-24 stable main@&amp;#39; $PREFIX/etc/apt/sources.list sed -i &amp;#39;s@^\(deb.*games stable\)$@#\1\ndeb https://mirrors.tuna.tsinghua.edu.cn/termux/game-packages-24 games stable@&amp;#39; $PREFIX/etc/apt/sources.list.d/game.list sed -i &amp;#39;s@^\(deb.*science stable\)$@#\1\ndeb https://mirrors.tuna.tsinghua.edu.cn/termux/science-packages-24 science stable@&amp;#39; $PREFIX/etc/apt/sources.list.d/science.list apt update &amp;amp;&amp;amp; apt upgrade 安装虚拟机
+# ubuntu pkg install wget openssl-tool proot -y &amp;amp;&amp;amp; hash -r &amp;amp;&amp;amp; wget https://raw.githubusercontent.com/EXALAB/AnLinux-Resources/master/Scripts/Installer/Ubuntu/ubuntu.sh &amp;amp;&amp;amp; bash ubuntu.sh  # kali Linux pkg install wget openssl-tool proot -y &amp;amp;&amp;amp; hash -r &amp;amp;&amp;amp; wget https://raw.</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://javabullshit.github.io/about/</link>
+      <pubDate>Wed, 02 Mar 2022 05:37:15 +0000</pubDate>
+      
+      <guid>https://javabullshit.github.io/about/</guid>
+      <description>直到有一天我想起了我的这个github账号！
+nojava域名过期了，用静态博客了。</description>
+    </item>
+    
+  </channel>
+</rss>

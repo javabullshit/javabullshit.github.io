@@ -1,0 +1,73 @@
+baseURL = 'https://javabullshit.github.io'
+languageCode = 'en-us'
+title = 'Ahri Love'
+theme = 'gokarna'
+
+# Automatically generate robots.txt
+enableRobotsTXT = true
+
+[params]
+  avatarURL = "/images/ahri.jpg"
+
+#  description = "How are you? I'm fine, Thanks."
+   description = "一个无人知晓の小站( ╹▽╹ )"
+
+   favicon = "/favicon.ico"
+
+#  showPostsOnHomePage = "popular"
+
+socialIcons = [
+      {name = "twitter", url = "/posts"},
+      {name = "instagram", url = "/gallery"},
+      {name = "github", url = "https://github.com/javabullshit"},
+      {name = "rss", url = "/index.xml"},
+    ]
+
+
+[menu]
+  [[menu.main]]
+    # Unique identifer for a menu item
+    identifier = "posts"
+
+    url = "/posts/"
+
+    # You can add extra information before the name (HTML format is supported), such as icons
+    pre = ""
+
+    # You can add extra information after the name (HTML format is supported), such as icons
+    post = ""
+
+    # Display name
+    name = "Posts"
+
+    # Weights are used to determine the ordering
+    weight = 1
+
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 2
+
+  [[menu.main]]
+    name = "Gallery"
+    url = "/gallery"
+    weight = 3
+
+  [[menu.main]]
+    name = "Friends"
+    url = "/friends"
+    weight = 5
+
+  [[menu.main]]
+    name = "About"
+    url = "/about"
+    weight = 6
+
+  [[menu.main]]
+    identifier = "github"
+    url = "https://github.com/JavaBullShit"
+    weight = 7
+
+    # We use feather-icons: https://feathericons.com/
+    pre = "<span data-feather='github'></span>"
