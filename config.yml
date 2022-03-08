@@ -1,5 +1,5 @@
 baseURL: "https://javabullshit.github.io"
-title: Ahri Love
+title: 编程笔记本
 paginate: 5
 theme: PaperMod
 publishDir: docs
@@ -17,10 +17,10 @@ minify:
 
 params:
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
-    title: Ahri Love
+    title: 编程笔记本
     description: ""
     keywords: [Blog]
-    author: Ahri
+    author: 编程笔记本
     # author: ["Me", "You"] # multiple authors
     images: ["<link or path of image for opengraph, twitter-cards>"]
     DateFormat: "January 2, 2006"
@@ -56,13 +56,13 @@ params:
         safari_pinned_tab: "<link / abs url>"
 
     label:
-        text: "Ahri Love"
+        text: "编程笔记本"
         iconHeight: 35
 
     # profile-mode
     profileMode:
         enabled: false # needs to be explicitly set
-        title: Ahri Love
+        title: 编程笔记本
         subtitle: "This is subtitle"
         imageUrl: "<img location>"
         imageWidth: 120
