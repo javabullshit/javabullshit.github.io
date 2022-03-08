@@ -8,9 +8,10 @@ weiget: 1
 键盘方案
 ```shell
 extra-keys = [ \
- ['ESC','/','[',']','UP','`','PGUP','{'], \ 
- ['TAB','CTRL','|','LEFT','DOWN','RIGHT','PGDN','}'] \
+ ['ESC','|','/','F5','[','UP',']','`','{','<'], \
+ ['TAB','CTRL','=','ALT','LEFT','DOWN','RIGHT','PGDN','}','>'] \
 ]
+
 ```
 
 zsh
