@@ -77,8 +77,9 @@ sed -i &amp;#39;s@^\(deb.*stable main\)$@#\1\ndeb https://mirrors.tuna.tsinghua.
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://javabullshit.github.io/about/</guid>
-      <description>直到有一天我想起了我的这个github账号🤔
-🚀Projects  Pihpi 一款Typecho主题  ✨Star  Ahri Love：一个无人知晓の小站( ╹▽╹ )  📖计划中的学习任务  Flask Shell  </description>
+      <description> 本站仅用于记录学习笔记。
+ 直到有一天我想起了我的这个github账号🤔
+🚀Projects  Pihpi 一款Typecho主题  ✨Star  编程笔记本：一个无人知晓の小站( ╹▽╹ )  📖计划中的学习任务  Flask Shell  </description>
     </item>
     
     <item>
@@ -87,7 +88,7 @@ sed -i &amp;#39;s@^\(deb.*stable main\)$@#\1\ndeb https://mirrors.tuna.tsinghua.
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://javabullshit.github.io/links/</guid>
-      <description> MrDjun 松岛川树：许多人来来去去，相聚又别离 暗影：暗影无际，暗夜无边 pai233の小窝： Write Down My Life. 虎山居： 一个分享学习和生活的地方  </description>
+      <description> MrDjun：Java大佬 松岛川树：许多人来来去去，相聚又别离 暗影：暗影无际，暗夜无边 pai233の小窝： Write Down My Life. 虎山居： 一个分享学习和生活的地方  </description>
     </item>
     
   </channel>

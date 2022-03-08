@@ -4,7 +4,7 @@ layout: "links"
 url: "/links/"
 ---
 
- - [MrDjun](https://mrdjun.gitee.io/)
+ - [MrDjun](https://mrdjun.gitee.io/)：Java大佬
  - [松岛川树](https://mikin-blogs.vercel.app/)：许多人来来去去，相聚又别离
  - [暗影](https://dsanying.github.io/)：暗影无际，暗夜无边
  - [pai233の小窝](https://blog.pai233.top/)： Write Down My Life.
