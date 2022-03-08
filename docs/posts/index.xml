@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on Ahri Love</title>
-    <link>https://examplesite.com/posts/</link>
+    <link>https://javabullshit.github.io/posts/</link>
     <description>Recent content in Posts on Ahri Love</description>
     <image>
-      <url>https://examplesite.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://examplesite.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://javabullshit.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://javabullshit.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 02 Mar 2022 23:33:06 +0000</lastBuildDate><atom:link href="https://examplesite.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 02 Mar 2022 23:33:06 +0000</lastBuildDate><atom:link href="https://javabullshit.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>github pages设置仓库子目录为网站根目录，静态博客修改默认渲染路径</title>
-      <link>https://examplesite.com/posts/set-docs-folder-as-root-dir/</link>
+      <link>https://javabullshit.github.io/posts/set-docs-folder-as-root-dir/</link>
       <pubDate>Wed, 02 Mar 2022 23:33:06 +0000</pubDate>
       
-      <guid>https://examplesite.com/posts/set-docs-folder-as-root-dir/</guid>
+      <guid>https://javabullshit.github.io/posts/set-docs-folder-as-root-dir/</guid>
       <description>昨天还在想静态博客部署的问题，源文件和生成的网页文件怎么处理，今天找到了方案。
 好像很多用户都没有尝试过这个操作
 在github pages里可以把子目录docs设置为网站根目录，这样子，一个repository就能同时存放源文件和网页文件而不用分支了😎
@@ -26,10 +26,10 @@
     
     <item>
       <title>Hugo笔记</title>
-      <link>https://examplesite.com/posts/hugo/</link>
+      <link>https://javabullshit.github.io/posts/hugo/</link>
       <pubDate>Wed, 02 Mar 2022 10:50:27 +0000</pubDate>
       
-      <guid>https://examplesite.com/posts/hugo/</guid>
+      <guid>https://javabullshit.github.io/posts/hugo/</guid>
       <description>文档 https://gohugo.io/documentation/
 评论插件的选择 几个不错的评论插件:
  Valine: 传统的昵称、邮箱、网址式 utterances: github登录评论，配置起来最简单 gitalk: github登录评论，美观 disqus: 老外用的多，有收费功能  人生苦短，我用utterances  在github上创建一个公开的repository 在github上安装uterances app：https://github.com/apps/utterances，安装时选择刚才创建的repository 进入官网，填入刚才的repository，然后复制下面的代码填到hugo模板里的相对应位置，一般在是post.html里面找  &amp;lt;script src=&amp;#34;https://utteranc.es/client.js&amp;#34; repo=&amp;#34;javabullshit/comments&amp;#34;  issue-term=&amp;#34;pathname&amp;#34;  theme=&amp;#34;github-light&amp;#34; crossorigin=&amp;#34;anonymous&amp;#34;  async&amp;gt; &amp;lt;/script&amp;gt; 编辑config.toml，加入以下内容：  [params.utteranc] enable = true repo = &amp;#34;javabullshit/comments&amp;#34; issueTerm = &amp;#34;pathname&amp;#34; 进入官网，
@@ -40,19 +40,19 @@
     
     <item>
       <title>Git常用</title>
-      <link>https://examplesite.com/posts/git/</link>
+      <link>https://javabullshit.github.io/posts/git/</link>
       <pubDate>Wed, 02 Mar 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://examplesite.com/posts/git/</guid>
+      <guid>https://javabullshit.github.io/posts/git/</guid>
       <description>初始化 # 以当前目录为项目创建仓库 git init  # 创建一个目录作为项目仓库 git init [name] 提交至暂存区 git add [file] git commit -m [msg] 分支 # 创建分支 git branch [name]  # 查看分支，-r：远程分支，-a：所有分支 git branch 参数  # 切换分支 git checkout 分支名  # 删除本地分支 git branch -d [BranchName]  # 删除远程分支 git push origin --delete [BranchName] 同步 # 添加远程仓库 git remote add [仓库] [仓库url]  # 同步 git push [仓库] [分支]  # 同步到本地 git pull [仓库] [分支] 其他 加上--global表示全局，不加就仅针对当前项目</description>
     </item>
     
     <item>
       <title>安装Termux后要做的</title>
-      <link>https://examplesite.com/posts/termux/</link>
+      <link>https://javabullshit.github.io/posts/termux/</link>
       <pubDate>Wed, 02 Mar 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://examplesite.com/posts/termux/</guid>
+      <guid>https://javabullshit.github.io/posts/termux/</guid>
       <description>键盘方案
 extra-keys = [ \  [&amp;#39;ESC&amp;#39;,&amp;#39;/&amp;#39;,&amp;#39;[&amp;#39;,&amp;#39;]&amp;#39;,&amp;#39;UP&amp;#39;,&amp;#39;=&amp;#39;,&amp;#39;PGUP&amp;#39;,&amp;#39;{&amp;#39;], \  [&amp;#39;TAB&amp;#39;,&amp;#39;CTRL&amp;#39;,&amp;#39;|&amp;#39;,&amp;#39;LEFT&amp;#39;,&amp;#39;DOWN&amp;#39;,&amp;#39;RIGHT&amp;#39;,&amp;#39;PGDN&amp;#39;,&amp;#39;}&amp;#39;] \ ] zsh
 sh -c &amp;#34;$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&amp;#34; 国内源

@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>termux on Ahri Love</title>
-    <link>https://examplesite.com/tags/termux/</link>
+    <link>https://javabullshit.github.io/tags/termux/</link>
     <description>Recent content in termux on Ahri Love</description>
     <image>
-      <url>https://examplesite.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://examplesite.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://javabullshit.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://javabullshit.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 02 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://examplesite.com/tags/termux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 02 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://javabullshit.github.io/tags/termux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>安装Termux后要做的</title>
-      <link>https://examplesite.com/posts/termux/</link>
+      <link>https://javabullshit.github.io/posts/termux/</link>
       <pubDate>Wed, 02 Mar 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://examplesite.com/posts/termux/</guid>
+      <guid>https://javabullshit.github.io/posts/termux/</guid>
       <description>键盘方案
 extra-keys = [ \  [&amp;#39;ESC&amp;#39;,&amp;#39;/&amp;#39;,&amp;#39;[&amp;#39;,&amp;#39;]&amp;#39;,&amp;#39;UP&amp;#39;,&amp;#39;=&amp;#39;,&amp;#39;PGUP&amp;#39;,&amp;#39;{&amp;#39;], \  [&amp;#39;TAB&amp;#39;,&amp;#39;CTRL&amp;#39;,&amp;#39;|&amp;#39;,&amp;#39;LEFT&amp;#39;,&amp;#39;DOWN&amp;#39;,&amp;#39;RIGHT&amp;#39;,&amp;#39;PGDN&amp;#39;,&amp;#39;}&amp;#39;] \ ] zsh
 sh -c &amp;#34;$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&amp;#34; 国内源

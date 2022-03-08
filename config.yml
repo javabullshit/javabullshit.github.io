@@ -20,7 +20,7 @@ params:
     title: Ahri Love
     description: ""
     keywords: [Blog]
-    author: Me
+    author: Ahri
     # author: ["Me", "You"] # multiple authors
     images: ["<link or path of image for opengraph, twitter-cards>"]
     DateFormat: "January 2, 2006"
@@ -62,7 +62,7 @@ params:
     # profile-mode
     profileMode:
         enabled: false # needs to be explicitly set
-        title: ExampleSite
+        title: Ahri Love
         subtitle: "This is subtitle"
         imageUrl: "<img location>"
         imageWidth: 120

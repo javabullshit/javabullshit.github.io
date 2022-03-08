@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>git on Ahri Love</title>
-    <link>https://examplesite.com/tags/git/</link>
+    <link>https://javabullshit.github.io/tags/git/</link>
     <description>Recent content in git on Ahri Love</description>
     <image>
-      <url>https://examplesite.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://examplesite.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://javabullshit.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://javabullshit.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 02 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://examplesite.com/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 02 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://javabullshit.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Git常用</title>
-      <link>https://examplesite.com/posts/git/</link>
+      <link>https://javabullshit.github.io/posts/git/</link>
       <pubDate>Wed, 02 Mar 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://examplesite.com/posts/git/</guid>
+      <guid>https://javabullshit.github.io/posts/git/</guid>
       <description>初始化 # 以当前目录为项目创建仓库 git init  # 创建一个目录作为项目仓库 git init [name] 提交至暂存区 git add [file] git commit -m [msg] 分支 # 创建分支 git branch [name]  # 查看分支，-r：远程分支，-a：所有分支 git branch 参数  # 切换分支 git checkout 分支名  # 删除本地分支 git branch -d [BranchName]  # 删除远程分支 git push origin --delete [BranchName] 同步 # 添加远程仓库 git remote add [仓库] [仓库url]  # 同步 git push [仓库] [分支]  # 同步到本地 git pull [仓库] [分支] 其他 加上--global表示全局，不加就仅针对当前项目</description>
     </item>
     
