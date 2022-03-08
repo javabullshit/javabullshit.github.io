@@ -1,0 +1,74 @@
+baseURL = 'https://javabullshit.github.io'
+languageCode = 'en-us'
+title = 'Ahri Love'
+theme = 'gokarna'
+publishDir = "docs"
+
+# Automatically generate robots.txt
+enableRobotsTXT = true
+
+[params.utteranc]
+enable = true
+repo = "javabullshit/comments"
+issueTerm = "pathname"
+
+[params]
+  avatarURL = "/images/ahri.jpg"
+
+#  description = "How are you? I'm fine, Thanks."
+   description = "一个无人知晓の小站( ╹▽╹ )"
+
+   favicon = "/favicon.ico"
+
+  showPostsOnHomePage = "popular"
+
+socialIcons = [
+      {name = "twitter", url = "/posts"},
+      {name = "instagram", url = "/gallery"},
+      {name = "github", url = "https://github.com/javabullshit"},
+      {name = "rss", url = "/index.xml"},
+    ]
+
+
+[menu]
+  [[menu.main]]
+    # Unique identifer for a menu item
+    identifier = "posts"
+
+    url = "/posts/"
+
+    # You can add extra information before the name (HTML format is supported), such as icons
+    pre = ""
+
+    # You can add extra information after the name (HTML format is supported), such as icons
+    post = ""
+
+    # Display name
+    name = "内容"
+
+    # Weights are used to determine the ordering
+    weight = 1
+
+  [[menu.main]]
+    identifier = "tags"
+    name = "标签"
+    url = "/tags/"
+    weight = 2
+
+  [[menu.main]]
+    name = "友链"
+    url = "/links"
+    weight = 3
+
+  [[menu.main]]
+    name = "关于"
+    url = "/about"
+    weight = 4
+
+  [[menu.main]]
+    identifier = "github"
+    url = "https://github.com/JavaBullShit"
+    weight = 5
+
+    # We use feather-icons: https://feathericons.com/
+    pre = "<span data-feather='github'></span>"

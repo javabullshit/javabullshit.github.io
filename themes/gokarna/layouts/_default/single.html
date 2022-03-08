@@ -1,0 +1,13 @@
+{{ define "main" }}
+    {{ if eq .Type "post" }}
+        {{- partial "post.html" . -}}
+    {{ end }}
+
+    {{ if eq .Type "page" }}
+        {{- partial "page.html" . -}}
+    {{ end }}
+
+    {{ if eq .Type "links" }}
+        {{- partial "links.html" . -}}
+    {{ end }}
+{{ end }}

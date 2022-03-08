@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>hugo on Ahri Love</title>
+    <link>https://examplesite.com/tags/hugo/</link>
+    <description>Recent content in hugo on Ahri Love</description>
+    <image>
+      <url>https://examplesite.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://examplesite.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 02 Mar 2022 10:50:27 +0000</lastBuildDate><atom:link href="https://examplesite.com/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo笔记</title>
+      <link>https://examplesite.com/posts/hugo/</link>
+      <pubDate>Wed, 02 Mar 2022 10:50:27 +0000</pubDate>
+      
+      <guid>https://examplesite.com/posts/hugo/</guid>
+      <description>文档 https://gohugo.io/documentation/
+评论插件的选择 几个不错的评论插件:
+ Valine: 传统的昵称、邮箱、网址式 utterances: github登录评论，配置起来最简单 gitalk: github登录评论，美观 disqus: 老外用的多，有收费功能  人生苦短，我用utterances  在github上创建一个公开的repository 在github上安装uterances app：https://github.com/apps/utterances，安装时选择刚才创建的repository 进入官网，填入刚才的repository，然后复制下面的代码填到hugo模板里的相对应位置，一般在是post.html里面找  &amp;lt;script src=&amp;#34;https://utteranc.es/client.js&amp;#34; repo=&amp;#34;javabullshit/comments&amp;#34;  issue-term=&amp;#34;pathname&amp;#34;  theme=&amp;#34;github-light&amp;#34; crossorigin=&amp;#34;anonymous&amp;#34;  async&amp;gt; &amp;lt;/script&amp;gt; 编辑config.toml，加入以下内容：  [params.utteranc] enable = true repo = &amp;#34;javabullshit/comments&amp;#34; issueTerm = &amp;#34;pathname&amp;#34; 进入官网，
+页内超链接新标签页打开 需要修改主题文件夹中的3个文件
+ head.html post.html page.html  在&amp;lt;body&amp;gt;之前加入javascript代码：
+&amp;lt;script type=&amp;#34;text/javascript&amp;#34;&amp;gt; 	function addaTarget(id) { 	var aTags = document.getElementById(id).getElementsByTagName(&amp;#34;a&amp;#34;); 	for (i = 0; i &amp;lt; aTags.</description>
+    </item>
+    
+    <item>
+      <title>Git常用</title>
+      <link>https://examplesite.com/posts/git/</link>
+      <pubDate>Wed, 02 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://examplesite.com/posts/git/</guid>
+      <description>初始化 # 以当前目录为项目创建仓库 git init  # 创建一个目录作为项目仓库 git init [name] 提交至暂存区 git add [file] git commit -m [msg] 分支 # 创建分支 git branch [name]  # 查看分支，-r：远程分支，-a：所有分支 git branch 参数  # 切换分支 git checkout 分支名  # 删除本地分支 git branch -d [BranchName]  # 删除远程分支 git push origin --delete [BranchName] 同步 # 添加远程仓库 git remote add [仓库] [仓库url]  # 同步 git push [仓库] [分支]  # 同步到本地 git pull [仓库] [分支] 其他 加上--global表示全局，不加就仅针对当前项目</description>
+    </item>
+    
+  </channel>
+</rss>
