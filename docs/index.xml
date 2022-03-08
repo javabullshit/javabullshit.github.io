@@ -63,7 +63,7 @@
       
       <guid>https://javabullshit.github.io/posts/termux/</guid>
       <description>键盘方案
-extra-keys = [ \  [&amp;#39;ESC&amp;#39;,&amp;#39;/&amp;#39;,&amp;#39;[&amp;#39;,&amp;#39;]&amp;#39;,&amp;#39;UP&amp;#39;,&amp;#39;=&amp;#39;,&amp;#39;PGUP&amp;#39;,&amp;#39;{&amp;#39;], \  [&amp;#39;TAB&amp;#39;,&amp;#39;CTRL&amp;#39;,&amp;#39;|&amp;#39;,&amp;#39;LEFT&amp;#39;,&amp;#39;DOWN&amp;#39;,&amp;#39;RIGHT&amp;#39;,&amp;#39;PGDN&amp;#39;,&amp;#39;}&amp;#39;] \ ] zsh
+extra-keys = [ \  [&amp;#39;ESC&amp;#39;,&amp;#39;/&amp;#39;,&amp;#39;[&amp;#39;,&amp;#39;]&amp;#39;,&amp;#39;UP&amp;#39;,&amp;#39;`&amp;#39;,&amp;#39;PGUP&amp;#39;,&amp;#39;{&amp;#39;], \   [&amp;#39;TAB&amp;#39;,&amp;#39;CTRL&amp;#39;,&amp;#39;|&amp;#39;,&amp;#39;LEFT&amp;#39;,&amp;#39;DOWN&amp;#39;,&amp;#39;RIGHT&amp;#39;,&amp;#39;PGDN&amp;#39;,&amp;#39;}&amp;#39;] \ ] zsh
 sh -c &amp;#34;$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&amp;#34; 国内源
 sed -i &amp;#39;s@^\(deb.*stable main\)$@#\1\ndeb https://mirrors.tuna.tsinghua.edu.cn/termux/termux-packages-24 stable main@&amp;#39; $PREFIX/etc/apt/sources.list sed -i &amp;#39;s@^\(deb.*games stable\)$@#\1\ndeb https://mirrors.tuna.tsinghua.edu.cn/termux/game-packages-24 games stable@&amp;#39; $PREFIX/etc/apt/sources.list.d/game.list sed -i &amp;#39;s@^\(deb.*science stable\)$@#\1\ndeb https://mirrors.tuna.tsinghua.edu.cn/termux/science-packages-24 science stable@&amp;#39; $PREFIX/etc/apt/sources.list.d/science.list apt update &amp;amp;&amp;amp; apt upgrade 安装虚拟机
 # ubuntu pkg install wget openssl-tool proot -y &amp;amp;&amp;amp; hash -r &amp;amp;&amp;amp; wget https://raw.githubusercontent.com/EXALAB/AnLinux-Resources/master/Scripts/Installer/Ubuntu/ubuntu.sh &amp;amp;&amp;amp; bash ubuntu.sh  # kali Linux pkg install wget openssl-tool proot -y &amp;amp;&amp;amp; hash -r &amp;amp;&amp;amp; wget https://raw.</description>
@@ -88,7 +88,8 @@ sed -i &amp;#39;s@^\(deb.*stable main\)$@#\1\ndeb https://mirrors.tuna.tsinghua.
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://javabullshit.github.io/links/</guid>
-      <description> MrDjun：Java大佬 松岛川树：许多人来来去去，相聚又别离 暗影：暗影无际，暗夜无边 pai233の小窝： Write Down My Life. 虎山居： 一个分享学习和生活的地方  </description>
+      <description> SerMsBlog: Ser-Ms国内地址 MrDjun: Java大佬 松岛川树: 许多人来来去去，相聚又别离 暗影: 暗影无际，暗夜无边 pai233の小窝: Write Down My Life. 虎山居: 一个分享学习和生活的地方  ⭐本站信息 网站名: 编程笔记本 网址: https://javabullshit.github.io/ 描述: 一个无人访问的小站 Logo: https://javabullshit.github.io/images/ahri.jpg 加友链在下方留言，格式（使用英文标点符号）:
+[网站名](网址): 网站描述 </description>
     </item>
     
   </channel>
