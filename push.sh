@@ -1,3 +1,7 @@
+#!/usr/bin/expect
 git add *
 git commit -m "commit"
-git push origin main
+spawn git push origin main
+expect "*password:"
+send "[passwd]\r"
+interact
