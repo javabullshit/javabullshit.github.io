@@ -9,7 +9,18 @@
       <link>https://javabullshit.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 02 Mar 2022 23:33:06 +0000</lastBuildDate><atom:link href="https://javabullshit.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 12 Mar 2022 04:30:09 +0000</lastBuildDate><atom:link href="https://javabullshit.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Shell与Python合体</title>
+      <link>https://javabullshit.github.io/posts/shell-python/</link>
+      <pubDate>Sat, 12 Mar 2022 04:30:09 +0000</pubDate>
+      
+      <guid>https://javabullshit.github.io/posts/shell-python/</guid>
+      <description>script=&amp;#34;for i in range(1,10): print(i)&amp;#34; python -c &amp;#34;&amp;#34;&amp;#34;$script&amp;#34;&amp;#34;&amp;#34; 带参数：
+script=&amp;#34; import sys a=sys.argv for i in a: print(i) &amp;#34; python -c &amp;#34;&amp;#34;&amp;#34;$script&amp;#34;&amp;#34;&amp;#34; hello bash 运行结果：
+-c hello bash </description>
+    </item>
+    
     <item>
       <title>github pages设置仓库子目录为网站根目录，静态博客修改默认渲染路径</title>
       <link>https://javabullshit.github.io/posts/set-docs-folder-as-root-dir/</link>
