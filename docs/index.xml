@@ -90,7 +90,7 @@ sed -i &amp;#39;s@^\(deb.*stable main\)$@#\1\ndeb https://mirrors.tuna.tsinghua.
       <guid>https://javabullshit.github.io/about/</guid>
       <description> 本站仅用于记录学习笔记。
  直到有一天我想起了我的这个github账号🤔
-🚀Projects  Pihpi 一款Typecho主题  ✨Star  编程笔记本：一个无人知晓の小站( ╹▽╹ )  📖计划中的学习任务  Flask Shell  </description>
+🚀Projects  Pihpi 一款Typecho主题  ✨Star  编程笔记本：一个无人知晓の小站( ╹▽╹ )  📖计划中的学习任务  Python  </description>
     </item>
     
     <item>
@@ -99,7 +99,7 @@ sed -i &amp;#39;s@^\(deb.*stable main\)$@#\1\ndeb https://mirrors.tuna.tsinghua.
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://javabullshit.github.io/links/</guid>
-      <description> SerMsBlog: Ser-Ms国内地址 MrDjun: Java大佬 松岛川树: 许多人来来去去，相聚又别离 暗影: 暗影无际，暗夜无边 pai233の小窝: Write Down My Life. 虎山居: 一个分享学习和生活的地方 柯善康: 柯善康个人博客  ⭐本站信息 网站名: 编程笔记本 网址: https://javabullshit.github.io/ 描述: 一个无人访问的小站 Logo: https://javabullshit.github.io/images/ahri.jpg 加友链在下方留言，格式（使用英文标点符号）:
+      <description> Go博客 SerMsBlog: Ser-Ms国内地址 MrDjun: Java大佬 松岛川树: 许多人来来去去，相聚又别离 暗影: 暗影无际，暗夜无边 pai233の小窝: Write Down My Life. 虎山居: 一个分享学习和生活的地方 柯善康: 柯善康个人博客  ⭐本站信息 网站名: 编程笔记本 网址: https://javabullshit.github.io/ 描述: 一个无人访问的小站 Logo: https://javabullshit.github.io/images/ahri.jpg 加友链在下方留言，格式（使用英文标点符号）:
 [网站名](网址): 网站描述 </description>
     </item>
     

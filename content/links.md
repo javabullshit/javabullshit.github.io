@@ -4,6 +4,7 @@ layout: "links"
 url: "/links/"
 ---
 
+ - [Go博客](https://lazzygo.github.io)
  - [SerMsBlog](https://ser-mingshao.github.io): Ser-Ms国内地址
  - [MrDjun](https://mrdjun.gitee.io/): Java大佬
  - [松岛川树](https://mikin-blogs.vercel.app/): 许多人来来去去，相聚又别离
