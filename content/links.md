@@ -14,7 +14,7 @@ url: "/links/"
  - [柯善康](https://www.keshankang.org/): 柯善康个人博客
 
 #### ⭐本站信息
-```markdown
+```
 网站名: 编程笔记本
 网址: https://javabullshit.github.io/
 描述: 一个无人访问的小站
@@ -22,6 +22,6 @@ Logo: https://javabullshit.github.io/images/ahri.jpg
 ```
 
 加友链在下方留言，格式（使用英文标点符号）: 
-```markdown
+```
 [网站名](网址):  网站描述
 ```
