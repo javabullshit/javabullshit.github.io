@@ -63,6 +63,14 @@
 </li></ul></nav></header><main class=main>
 <header class=page-header><div class=breadcrumbs><a href=https://javabullshit.github.io>Home</a></div><h1>Posts</h1></header><article class=post-entry>
 <header class=entry-header>
+<h2>python UDP
+</h2></header><section class=entry-content>
+<p>server.py:
+import socket s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM) # 绑定端口: s.bind(('127.0.0.1', 9999)) print('Bind UDP on 9999...') while True: # 接收数据: data, addr = s.recvfrom(1024) print('Received from %s:%s.' % addr) s.sendto(b'Hello, %s!' % data, addr) client.py:
+import socket s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM) for data in [b'Michael', b'Tracy', b'Sarah']: # 发送数据: s.sendto(data, ('127.0.0.1', 9999)) # 接收数据: print(s.recv(1024).decode('utf-8')) s.close() output:
+Hello, Michael! Hello, Tracy! Hello, Sarah! </p></section><footer class=entry-footer><span title="2022-03-16 07:26:07 +0000 UTC">March 16, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;编程笔记本</footer><a class=entry-link aria-label="post link to python UDP" href=https://javabullshit.github.io/posts/udp/></a>
+</article><article class=post-entry>
+<header class=entry-header>
 <h2>制定类：更多的魔法方法
 </h2></header><section class=entry-content>
 <p>官方文档： https://docs.python.org/3/reference/datamodel.html#special-method-names
@@ -86,12 +94,6 @@ cls cls I'm eating shit f**k. f**k you! </p></section><footer class=entry-footer
 <p>继承于threading，重写构造方法：
 import threading class th(threading.Thread): def __init__(self): threading.Thread.__init__(self) print("__init__") def run(self): print("run") t=th() t.start() t.join() output:
 __init__ run </p></section><footer class=entry-footer><span title="2022-03-14 14:00:45 +0000 UTC">March 14, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;编程笔记本</footer><a class=entry-link aria-label="post link to 重✍️线程构造方法" href=https://javabullshit.github.io/posts/rewrite-methods-in-threading/></a>
-</article><article class=post-entry>
-<header class=entry-header>
-<h2>线程🔒
-</h2></header><section class=entry-content>
-<p>import threading import time lock=threading.Lock() def p(s): lock.acquire() for i in range(0,3): print(s) time.sleep(1) lock.release() t1=threading.Thread(target=p,args=("t1",)) t2=threading.Thread(target=p,args=("t2",)) t1.start() t2.start() output:
-t1 t1 t1 t2 t2 t2 </p></section><footer class=entry-footer><span title="2022-03-14 13:55:39 +0000 UTC">March 14, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;编程笔记本</footer><a class=entry-link aria-label="post link to 线程🔒" href=https://javabullshit.github.io/posts/threading-lock/></a>
 </article><footer class=page-footer>
 <nav class=pagination>
 <a class=next href=https://javabullshit.github.io/posts/page/2/>Next Page »</a>
