@@ -18,7 +18,7 @@ minify:
 params:
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
     title: 编程笔记本
-    description: ""
+    description: "记录学习笔记，以Python为主"
     keywords: [Blog]
     author: 编程笔记本
     # author: ["Me", "You"] # multiple authors
