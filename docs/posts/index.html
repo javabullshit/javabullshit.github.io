@@ -59,6 +59,12 @@
 </li></ul></nav></header><main class=main>
 <header class=page-header><div class=breadcrumbs><a href=https://javabullshit.github.io>Home</a></div><h1>Posts</h1></header><article class=post-entry>
 <header class=entry-header>
+<h2>Python上下文管理
+</h2></header><section class=entry-content>
+<p>class people(): def __init__(self,name): self.__name=name def __enter__(self): print('enter') def __exit__(self,exc_ty, exc_val, tb): print('exit') def say(self,s): print(s) me=people("john") with me: me.say('hello') output:
+enter hello exit </p></section><footer class=entry-footer><span title="2022-03-16 18:13:02 +0000 UTC">March 16, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;编程笔记本</footer><a class=entry-link aria-label="post link to Python上下文管理" href=https://javabullshit.github.io/posts/python-__enter__-and-__exit__/></a>
+</article><article class=post-entry>
+<header class=entry-header>
 <h2>缩短你的垃圾🐔代码
 </h2></header><section class=entry-content>
 <p>L = [] n = 1 while n &lt;= 99: L.append(n) n = n + 2 可用下面多种方法实现缩短:
@@ -84,12 +90,6 @@ Hello, Michael! Hello, Tracy! Hello, Sarah!...</p></section><footer class=entry-
 </h2></header><section class=entry-content>
 <p>class people(): def __init__(self,name): self.name=name def __call__(self): print("my name is {0.name}".format(self)) me=people("john") me() output:
 my name is john </p></section><footer class=entry-footer><span title="2022-03-16 06:43:43 +0000 UTC">March 16, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;编程笔记本</footer><a class=entry-link aria-label="post link to 把类当成方法使用" href=https://javabullshit.github.io/posts/use-class-ass-a-method/></a>
-</article><article class=post-entry>
-<header class=entry-header>
-<h2>给类的实例绑定方法
-</h2></header><section class=entry-content>
-<p>from types import MethodType class people(): def __init__(self): print("cls") def eat(self,shit): print("I'm eating "+shit) def say(self,shit): print(shit) you=people() me=people() # 仅给单个实例绑定方法 you.eat=MethodType(eat,you) you.eat("shit") # 给所有实例绑定方法 people.say=MethodType(say,people) you.say("f**k.") me.say("f**k you!") output:
-cls cls I'm eating shit f**k. f**k you! </p></section><footer class=entry-footer><span title="2022-03-15 07:47:50 +0000 UTC">March 15, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;编程笔记本</footer><a class=entry-link aria-label="post link to 给类的实例绑定方法" href=https://javabullshit.github.io/posts/binding-method-for-instance/></a>
 </article><footer class=page-footer>
 <nav class=pagination>
 <a class=next href=https://javabullshit.github.io/posts/page/2/>Next Page »</a>

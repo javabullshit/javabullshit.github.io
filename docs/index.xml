@@ -9,7 +9,17 @@
       <link>https://javabullshit.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 16 Mar 2022 13:27:29 +0000</lastBuildDate><atom:link href="https://javabullshit.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 16 Mar 2022 18:13:02 +0000</lastBuildDate><atom:link href="https://javabullshit.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Python上下文管理</title>
+      <link>https://javabullshit.github.io/posts/python-__enter__-and-__exit__/</link>
+      <pubDate>Wed, 16 Mar 2022 18:13:02 +0000</pubDate>
+      
+      <guid>https://javabullshit.github.io/posts/python-__enter__-and-__exit__/</guid>
+      <description>class people():  def __init__(self,name):  self.__name=name  def __enter__(self):  print(&amp;#39;enter&amp;#39;)  def __exit__(self,exc_ty, exc_val, tb):  print(&amp;#39;exit&amp;#39;)  def say(self,s):  print(s)  me=people(&amp;#34;john&amp;#34;)  with me:  me.say(&amp;#39;hello&amp;#39;) output:
+enter hello exit </description>
+    </item>
+    
     <item>
       <title>缩短你的垃圾🐔代码</title>
       <link>https://javabullshit.github.io/posts/abbreviation/</link>
