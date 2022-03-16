@@ -2,6 +2,9 @@
 title: "python UDP"
 date: 2022-03-16T07:26:07Z
 ---
+
+注意一点，`socket.socket()`的括号里不能像tcp一样为空
+
 server.py:
 ```python
 import socket
