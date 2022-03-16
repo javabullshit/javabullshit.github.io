@@ -9,7 +9,17 @@
       <link>https://javabullshit.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 16 Mar 2022 18:13:02 +0000</lastBuildDate><atom:link href="https://javabullshit.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 16 Mar 2022 18:36:23 +0000</lastBuildDate><atom:link href="https://javabullshit.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>property与setter：属性管理</title>
+      <link>https://javabullshit.github.io/posts/property-management/</link>
+      <pubDate>Wed, 16 Mar 2022 18:36:23 +0000</pubDate>
+      
+      <guid>https://javabullshit.github.io/posts/property-management/</guid>
+      <description>class people():  def __init__(self,name):  self.__name=name   @property  def name(self):  return self.__name   @name.setter  def name(self,name):  if not isinstance(name,str):  raise TypeError(&amp;#39;expected a string&amp;#39;)  self.__name=name  me=people(&amp;#34;john&amp;#34;) print(me.name) me.name=&amp;#34;tony&amp;#34; print(me.name) output:
+john tony </description>
+    </item>
+    
     <item>
       <title>Python上下文管理</title>
       <link>https://javabullshit.github.io/posts/python-__enter__-and-__exit__/</link>

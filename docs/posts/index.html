@@ -59,6 +59,12 @@
 </li></ul></nav></header><main class=main>
 <header class=page-header><div class=breadcrumbs><a href=https://javabullshit.github.io>Home</a></div><h1>Posts</h1></header><article class=post-entry>
 <header class=entry-header>
+<h2>property与setter：属性管理
+</h2></header><section class=entry-content>
+<p>class people(): def __init__(self,name): self.__name=name @property def name(self): return self.__name @name.setter def name(self,name): if not isinstance(name,str): raise TypeError('expected a string') self.__name=name me=people("john") print(me.name) me.name="tony" print(me.name) output:
+john tony </p></section><footer class=entry-footer><span title="2022-03-16 18:36:23 +0000 UTC">March 16, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;编程笔记本</footer><a class=entry-link aria-label="post link to property与setter：属性管理" href=https://javabullshit.github.io/posts/property-management/></a>
+</article><article class=post-entry>
+<header class=entry-header>
 <h2>Python上下文管理
 </h2></header><section class=entry-content>
 <p>class people(): def __init__(self,name): self.__name=name def __enter__(self): print('enter') def __exit__(self,exc_ty, exc_val, tb): print('exit') def say(self,s): print(s) me=people("john") with me: me.say('hello') output:
@@ -84,12 +90,6 @@ Hello, Michael! Hello, Tracy! Hello, Sarah!...</p></section><footer class=entry-
 </h2></header><section class=entry-content>
 <p>官方文档： https://docs.python.org/3/reference/datamodel.html#special-method-names
 中文： https://docs.python.org/zh-cn/3/reference/datamodel.html#special-method-names</p></section><footer class=entry-footer><span title="2022-03-16 06:52:22 +0000 UTC">March 16, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;编程笔记本</footer><a class=entry-link aria-label="post link to 制定类：更多的魔法方法" href=https://javabullshit.github.io/posts/magic-methods/></a>
-</article><article class=post-entry>
-<header class=entry-header>
-<h2>把类当成方法使用
-</h2></header><section class=entry-content>
-<p>class people(): def __init__(self,name): self.name=name def __call__(self): print("my name is {0.name}".format(self)) me=people("john") me() output:
-my name is john </p></section><footer class=entry-footer><span title="2022-03-16 06:43:43 +0000 UTC">March 16, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;编程笔记本</footer><a class=entry-link aria-label="post link to 把类当成方法使用" href=https://javabullshit.github.io/posts/use-class-ass-a-method/></a>
 </article><footer class=page-footer>
 <nav class=pagination>
 <a class=next href=https://javabullshit.github.io/posts/page/2/>Next Page »</a>
