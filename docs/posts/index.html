@@ -90,43 +90,6 @@ my name is john </p></section><footer class=entry-footer><span title="2022-03-16
 </h2></header><section class=entry-content>
 <p>from types import MethodType class people(): def __init__(self): print("cls") def eat(self,shit): print("I'm eating "+shit) def say(self,shit): print(shit) you=people() me=people() # 仅给单个实例绑定方法 you.eat=MethodType(eat,you) you.eat("shit") # 给所有实例绑定方法 people.say=MethodType(say,people) you.say("f**k.") me.say("f**k you!") output:
 cls cls I'm eating shit f**k. f**k you! </p></section><footer class=entry-footer><span title="2022-03-15 07:47:50 +0000 UTC">March 15, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;编程笔记本</footer><a class=entry-link aria-label="post link to 给类的实例绑定方法" href=https://javabullshit.github.io/posts/binding-method-for-instance/></a>
-</article><article class=post-entry>
-<header class=entry-header>
-<h2>重✍️线程构造方法
-</h2></header><section class=entry-content>
-<p>继承于threading，重写构造方法：
-import threading class th(threading.Thread): def __init__(self): threading.Thread.__init__(self) print("__init__") def run(self): print("run") t=th() t.start() t.join() output:
-__init__ run </p></section><footer class=entry-footer><span title="2022-03-14 14:00:45 +0000 UTC">March 14, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;编程笔记本</footer><a class=entry-link aria-label="post link to 重✍️线程构造方法" href=https://javabullshit.github.io/posts/rewrite-methods-in-threading/></a>
-</article><article class=post-entry>
-<header class=entry-header>
-<h2>线程🔒
-</h2></header><section class=entry-content>
-<p>import threading import time lock=threading.Lock() def p(s): lock.acquire() for i in range(0,3): print(s) time.sleep(1) lock.release() t1=threading.Thread(target=p,args=("t1",)) t2=threading.Thread(target=p,args=("t2",)) t1.start() t2.start() output:
-t1 t1 t1 t2 t2 t2 </p></section><footer class=entry-footer><span title="2022-03-14 13:55:39 +0000 UTC">March 14, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;编程笔记本</footer><a class=entry-link aria-label="post link to 线程🔒" href=https://javabullshit.github.io/posts/threading-lock/></a>
-</article><article class=post-entry>
-<header class=entry-header>
-<h2>MVC Pattern in Python
-</h2></header><section class=entry-content>
-<p>MVC Example module:
-class QuoteModel: def get_quote(self, n): try: value = quote[n] except: value = "Not found!" return value view:
-class QuoteTerminalController: def show(self, quote): print("") 未完结</p></section><footer class=entry-footer><span title="2022-03-13 10:32:23 +0000 UTC">March 13, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;编程笔记本</footer><a class=entry-link aria-label="post link to MVC Pattern in Python" href=https://javabullshit.github.io/posts/mvc-pattern-in-python/></a>
-</article><article class=post-entry>
-<header class=entry-header>
-<h2>Shell与Python合体
-</h2></header><section class=entry-content>
-<p>script="for i in range(1,10): print(i)" python -c """$script""" 带参数：
-script=" import sys a=sys.argv for i in a: print(i) " python -c """$script""" hello bash 运行结果：
--c hello bash </p></section><footer class=entry-footer><span title="2022-03-12 04:30:09 +0000 UTC">March 12, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;编程笔记本</footer><a class=entry-link aria-label="post link to Shell与Python合体" href=https://javabullshit.github.io/posts/shell-python/></a>
-</article><article class=post-entry>
-<header class=entry-header>
-<h2>github pages设置仓库子目录为网站根目录，静态博客修改默认渲染路径
-</h2></header><section class=entry-content>
-<p>昨天还在想静态博客部署的问题，源文件和生成的网页文件怎么处理，今天找到了方案。
-好像很多用户都没有尝试过这个操作
-在github pages里可以把子目录docs设置为网站根目录，这样子，一个repository就能同时存放源文件和网页文件而不用分支了😎
-但是市面上的静态博客生成器默认输出路径都不是docs文件夹，所以需要把静态博客生成器的渲染路径修改为docs，然后就可以直接把整个静态博客推送到repository了，没有任何繁杂的操作！
-修改渲染路径的方法 基本都是在配置文件里加入属性指定文件目录
-hugo: publishDir = dir jekyll: destination dir hexo: public_dir: 'dir' pelican: OUTPUT_PATH = 'output/' </p></section><footer class=entry-footer><span title="2022-03-02 23:33:06 +0000 UTC">March 2, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;编程笔记本</footer><a class=entry-link aria-label="post link to github pages设置仓库子目录为网站根目录，静态博客修改默认渲染路径" href=https://javabullshit.github.io/posts/set-docs-folder-as-root-dir/></a>
 </article><footer class=page-footer>
 <nav class=pagination>
 <a class=next href=https://javabullshit.github.io/posts/page/2/>Next Page »</a>

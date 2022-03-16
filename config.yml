@@ -1,6 +1,6 @@
 baseURL: "https://javabullshit.github.io"
 title: 编程笔记本
-paginate: 10
+paginate: 5
 theme: PaperMod
 publishDir: docs
 
