@@ -63,6 +63,12 @@
 </li></ul></nav></header><main class=main>
 <header class=page-header><div class=breadcrumbs><a href=https://javabullshit.github.io>Home</a></div><h1>Posts</h1></header><article class=post-entry>
 <header class=entry-header>
+<h2>把类当成方法使用
+</h2></header><section class=entry-content>
+<p>class people(): def __init__(self,name): self.name=name def __call__(self): print("my name is {0.name}".format(self)) me=people("john") me() output:
+my name is john </p></section><footer class=entry-footer><span title="2022-03-16 06:43:43 +0000 UTC">March 16, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;编程笔记本</footer><a class=entry-link aria-label="post link to 把类当成方法使用" href=https://javabullshit.github.io/posts/use-class-ass-a-method/></a>
+</article><article class=post-entry>
+<header class=entry-header>
 <h2>给类的实例绑定方法
 </h2></header><section class=entry-content>
 <p>from types import MethodType class people(): def __init__(self): print("cls") def eat(self,shit): print("I'm eating "+shit) def say(self,shit): print(shit) you=people() me=people() # 仅给单个实例绑定方法 you.eat=MethodType(eat,you) you.eat("shit") # 给所有实例绑定方法 people.say=MethodType(say,people) you.say("f**k.") me.say("f**k you!") output:
@@ -87,13 +93,6 @@ t1 t1 t1 t2 t2 t2 </p></section><footer class=entry-footer><span title="2022-03-
 <p>MVC Example module:
 class QuoteModel: def get_quote(self, n): try: value = quote[n] except: value = "Not found!" return value view:
 class QuoteTerminalController: def show(self, quote): print("") 未完结</p></section><footer class=entry-footer><span title="2022-03-13 10:32:23 +0000 UTC">March 13, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;编程笔记本</footer><a class=entry-link aria-label="post link to MVC Pattern in Python" href=https://javabullshit.github.io/posts/mvc-pattern-in-python/></a>
-</article><article class=post-entry>
-<header class=entry-header>
-<h2>Shell与Python合体
-</h2></header><section class=entry-content>
-<p>script="for i in range(1,10): print(i)" python -c """$script""" 带参数：
-script=" import sys a=sys.argv for i in a: print(i) " python -c """$script""" hello bash 运行结果：
--c hello bash </p></section><footer class=entry-footer><span title="2022-03-12 04:30:09 +0000 UTC">March 12, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;编程笔记本</footer><a class=entry-link aria-label="post link to Shell与Python合体" href=https://javabullshit.github.io/posts/shell-python/></a>
 </article><footer class=page-footer>
 <nav class=pagination>
 <a class=next href=https://javabullshit.github.io/posts/page/2/>Next Page »</a>
