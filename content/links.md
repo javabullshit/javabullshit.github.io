@@ -12,6 +12,7 @@ url: "/links/"
  - [pai233の小窝](https://blog.pai233.top/):  Write Down My Life.
  - [虎山居](https://blog.hushanju.com/):  一个分享学习和生活的地方
  - [柯善康](https://www.keshankang.org/): 柯善康个人博客
+ - [大胖胖的笔记](www.bigpp.cn): 
 
 #### ⭐本站信息
 ```
