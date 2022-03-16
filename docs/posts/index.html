@@ -63,6 +63,12 @@
 </li></ul></nav></header><main class=main>
 <header class=page-header><div class=breadcrumbs><a href=https://javabullshit.github.io>Home</a></div><h1>Posts</h1></header><article class=post-entry>
 <header class=entry-header>
+<h2>缩短你的垃圾代码
+</h2></header><section class=entry-content>
+<p>L = [] n = 1 while n &lt;= 99: L.append(n) n = n + 2 可用下面三种方法实现缩短:
+list(range(1, 100, 2)) list(range(1, 100))[::2] list(range(1, 100)[::2]) # slicing of range </p></section><footer class=entry-footer><span title="2022-03-16 13:27:29 +0000 UTC">March 16, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;编程笔记本</footer><a class=entry-link aria-label="post link to 缩短你的垃圾代码" href=https://javabullshit.github.io/posts/abbreviation/></a>
+</article><article class=post-entry>
+<header class=entry-header>
 <h2>python UDP
 </h2></header><section class=entry-content>
 <p>注意一点，socket.socket()的括号里不能像tcp一样为空
@@ -88,13 +94,6 @@ my name is john </p></section><footer class=entry-footer><span title="2022-03-16
 </h2></header><section class=entry-content>
 <p>from types import MethodType class people(): def __init__(self): print("cls") def eat(self,shit): print("I'm eating "+shit) def say(self,shit): print(shit) you=people() me=people() # 仅给单个实例绑定方法 you.eat=MethodType(eat,you) you.eat("shit") # 给所有实例绑定方法 people.say=MethodType(say,people) you.say("f**k.") me.say("f**k you!") output:
 cls cls I'm eating shit f**k. f**k you! </p></section><footer class=entry-footer><span title="2022-03-15 07:47:50 +0000 UTC">March 15, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;编程笔记本</footer><a class=entry-link aria-label="post link to 给类的实例绑定方法" href=https://javabullshit.github.io/posts/binding-method-for-instance/></a>
-</article><article class=post-entry>
-<header class=entry-header>
-<h2>重✍️线程构造方法
-</h2></header><section class=entry-content>
-<p>继承于threading，重写构造方法：
-import threading class th(threading.Thread): def __init__(self): threading.Thread.__init__(self) print("__init__") def run(self): print("run") t=th() t.start() t.join() output:
-__init__ run </p></section><footer class=entry-footer><span title="2022-03-14 14:00:45 +0000 UTC">March 14, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;编程笔记本</footer><a class=entry-link aria-label="post link to 重✍️线程构造方法" href=https://javabullshit.github.io/posts/rewrite-methods-in-threading/></a>
 </article><footer class=page-footer>
 <nav class=pagination>
 <a class=next href=https://javabullshit.github.io/posts/page/2/>Next Page »</a>
