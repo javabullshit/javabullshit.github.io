@@ -9,7 +9,17 @@
       <link>https://javabullshit.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 17 Mar 2022 08:26:56 +0000</lastBuildDate><atom:link href="https://javabullshit.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 17 Mar 2022 08:49:57 +0000</lastBuildDate><atom:link href="https://javabullshit.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>python反射</title>
+      <link>https://javabullshit.github.io/posts/reflection/</link>
+      <pubDate>Thu, 17 Mar 2022 08:49:57 +0000</pubDate>
+      
+      <guid>https://javabullshit.github.io/posts/reflection/</guid>
+      <description>class Website():  def index(self):  print(&amp;#34;index page&amp;#34;)   def archive(self):  print(&amp;#34;archive page&amp;#34;)   def about(self):  print(&amp;#34;about page&amp;#34;)   site = Website()  while True:  chioose = input(&amp;#34;请选择页面：&amp;#34;)  if hasattr(site, chioose):  f = getattr(site, chioose)  f()  elif chioose == &amp;#34;exit&amp;#34;:  break  else:  print(&amp;#34;404&amp;#34;) output:
+请选择页面：about about page 请选择页面：index index page 请选择页面：hjki 404 请选择页面：exit </description>
+    </item>
+    
     <item>
       <title>python中的多态</title>
       <link>https://javabullshit.github.io/posts/polymorphism/</link>
