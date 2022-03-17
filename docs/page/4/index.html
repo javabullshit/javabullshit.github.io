@@ -58,48 +58,18 @@
 <span>关于</span>
 </a>
 </li></ul></nav></header><main class=main>
-<article class=home-info>
+<article class=post-entry>
 <header class=entry-header>
-<h1>PHP是世界上最好的语言 🤗</h1></header><section class=entry-content>
-<p>因为PHP是有史以来最好的语言，没有之一。它快速，非常强大，而且免费。</p></section><footer class=entry-footer>
-<div class=social-icons>
-</div></footer></article><article class=post-entry>
-<header class=entry-header>
-<h2>抽象类
+<h2>安装Termux后要做的
 </h2></header><section class=entry-content>
-<p>抽象类不可实例化，被abstractclassmethod修饰的函数必须重写
-from abc import ABCMeta,abstractclassmethod class A(metaclass=ABCMeta): def __init__(self): pass @abstractclassmethod def say(self,s): pass class B(A): def __init__(self): pass def say(self,s): print(s) b=B() b.say("hello") output:
-hello </p></section><footer class=entry-footer><span title="2022-03-17 06:27:09 +0000 UTC">March 17, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;编程笔记本</footer><a class=entry-link aria-label="post link to 抽象类" href=https://javabullshit.github.io/posts/abstract-class/></a>
-</article><article class=post-entry>
-<header class=entry-header>
-<h2>property与setter：属性管理
-</h2></header><section class=entry-content>
-<p>class people(): def __init__(self,name): self.__name=name @property def name(self): return self.__name @name.setter def name(self,name): if not isinstance(name,str): raise TypeError('expected a string') self.__name=name me=people("john") print(me.name) me.name="tony" print(me.name) output:
-john tony </p></section><footer class=entry-footer><span title="2022-03-16 18:36:23 +0000 UTC">March 16, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;编程笔记本</footer><a class=entry-link aria-label="post link to property与setter：属性管理" href=https://javabullshit.github.io/posts/property-management/></a>
-</article><article class=post-entry>
-<header class=entry-header>
-<h2>Python上下文管理
-</h2></header><section class=entry-content>
-<p>class people(): def __init__(self,name): self.__name=name def __enter__(self): print('enter') def __exit__(self,exc_ty, exc_val, tb): print('exit') def say(self,s): print(s) me=people("john") with me: me.say('hello') output:
-enter hello exit </p></section><footer class=entry-footer><span title="2022-03-16 18:13:02 +0000 UTC">March 16, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;编程笔记本</footer><a class=entry-link aria-label="post link to Python上下文管理" href=https://javabullshit.github.io/posts/python-__enter__-and-__exit__/></a>
-</article><article class=post-entry>
-<header class=entry-header>
-<h2>缩短你的垃圾🐔代码
-</h2></header><section class=entry-content>
-<p>L = [] n = 1 while n &lt;= 99: L.append(n) n = n + 2 可用下面多种方法实现缩短:
-[i for i in range(1,100,2)] list(range(1, 100, 2)) list(range(1, 100))[::2] list(range(1, 100)[::2]) list(range(100))[1::2] [2*x-1 for x in range(1,51)] </p></section><footer class=entry-footer><span title="2022-03-16 13:27:29 +0000 UTC">March 16, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;编程笔记本</footer><a class=entry-link aria-label="post link to 缩短你的垃圾🐔代码" href=https://javabullshit.github.io/posts/abbreviation/></a>
-</article><article class=post-entry>
-<header class=entry-header>
-<h2>python UDP
-</h2></header><section class=entry-content>
-<p>注意一点，socket.socket()的括号里不能像tcp一样为空
-server.py:
-import socket s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM) # 绑定端口: s.bind(('127.0.0.1', 9999)) print('Bind UDP on 9999...') while True: # 接收数据: data, addr = s.recvfrom(1024) print('Received from %s:%s.' % addr) s.sendto(b'Hello, %s!' % data, addr) client.py:
-import socket s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM) for data in [b'Michael', b'Tracy', b'Sarah']: # 发送数据: s.sendto(data, ('127.0.0.1', 9999)) # 接收数据: print(s.recv(1024).decode('utf-8')) s.close() output:
-Hello, Michael! Hello, Tracy! Hello, Sarah!...</p></section><footer class=entry-footer><span title="2022-03-16 07:26:07 +0000 UTC">March 16, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;编程笔记本</footer><a class=entry-link aria-label="post link to python UDP" href=https://javabullshit.github.io/posts/udp/></a>
+<p>键盘方案
+extra-keys = [ \ ['ESC','|','/','F5','[','UP',']','`','{','&lt;'], \ ['TAB','CTRL','=','ALT','LEFT','DOWN','RIGHT','PGDN','}','>'] \ ] zsh
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" 国内源
+sed -i 's@^\(deb.*stable main\)$@#\1\ndeb https://mirrors.tuna.tsinghua.edu.cn/termux/termux-packages-24 stable main@' $PREFIX/etc/apt/sources.list sed -i 's@^\(deb.*games stable\)$@#\1\ndeb https://mirrors.tuna.tsinghua.edu.cn/termux/game-packages-24 games stable@' $PREFIX/etc/apt/sources.list.d/game.list sed -i 's@^\(deb.*science stable\)$@#\1\ndeb https://mirrors.tuna.tsinghua.edu.cn/termux/science-packages-24 science stable@' $PREFIX/etc/apt/sources.list.d/science.list apt update && apt upgrade 安装虚拟机
+# ubuntu pkg install wget openssl-tool proot -y && hash -r && wget https://raw.githubusercontent.com/EXALAB/AnLinux-Resources/master/Scripts/Installer/Ubuntu/ubuntu.sh && bash ubuntu.sh # kali Linux pkg install wget openssl-tool proot -y && hash -r && wget https://raw....</p></section><footer class=entry-footer><span title="2022-03-02 00:00:00 +0000 UTC">March 2, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;编程笔记本</footer><a class=entry-link aria-label="post link to 安装Termux后要做的" href=https://javabullshit.github.io/posts/termux/></a>
 </article><footer class=page-footer>
 <nav class=pagination>
-<a class=next href=https://javabullshit.github.io/page/2/>Next Page »</a>
+<a class=prev href=https://javabullshit.github.io/page/3/>« Prev Page</a>
 </nav></footer></main><footer class=footer>
 <span>&copy; 2022 <a href=https://javabullshit.github.io>编程笔记本</a></span>
 </footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>

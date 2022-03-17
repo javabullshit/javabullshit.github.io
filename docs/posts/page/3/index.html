@@ -59,6 +59,13 @@
 </li></ul></nav></header><main class=main>
 <header class=page-header><div class=breadcrumbs><a href=https://javabullshit.github.io>Home</a></div><h1>Posts</h1></header><article class=post-entry>
 <header class=entry-header>
+<h2>MVC Pattern in Python
+</h2></header><section class=entry-content>
+<p>MVC Example module:
+class QuoteModel: def get_quote(self, n): try: value = quote[n] except: value = "Not found!" return value view:
+class QuoteTerminalController: def show(self, quote): print("") 未完结</p></section><footer class=entry-footer><span title="2022-03-13 10:32:23 +0000 UTC">March 13, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;编程笔记本</footer><a class=entry-link aria-label="post link to MVC Pattern in Python" href=https://javabullshit.github.io/posts/mvc-pattern-in-python/></a>
+</article><article class=post-entry>
+<header class=entry-header>
 <h2>Shell与Python合体
 </h2></header><section class=entry-content>
 <p>script="for i in range(1,10): print(i)" python -c """$script""" 带参数：
@@ -89,18 +96,10 @@ head.html post.html page.html 在&lt;body>之前加入javascript代码：
 <h2>Git常用
 </h2></header><section class=entry-content>
 <p>初始化 # 以当前目录为项目创建仓库 git init # 创建一个目录作为项目仓库 git init [name] 提交至暂存区 git add [file] git commit -m [msg] 分支 # 创建分支 git branch [name] # 查看分支，-r：远程分支，-a：所有分支 git branch 参数 # 切换分支 git checkout 分支名 # 删除本地分支 git branch -d [BranchName] # 删除远程分支 git push origin --delete [BranchName] 同步 # 添加远程仓库 git remote add [仓库] [仓库url] # 同步 git push [仓库] [分支] # 同步到本地 git pull [仓库] [分支] 其他 加上--global表示全局，不加就仅针对当前项目...</p></section><footer class=entry-footer><span title="2022-03-02 00:00:00 +0000 UTC">March 2, 2022</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;编程笔记本</footer><a class=entry-link aria-label="post link to Git常用" href=https://javabullshit.github.io/posts/git/></a>
-</article><article class=post-entry>
-<header class=entry-header>
-<h2>安装Termux后要做的
-</h2></header><section class=entry-content>
-<p>键盘方案
-extra-keys = [ \ ['ESC','|','/','F5','[','UP',']','`','{','&lt;'], \ ['TAB','CTRL','=','ALT','LEFT','DOWN','RIGHT','PGDN','}','>'] \ ] zsh
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" 国内源
-sed -i 's@^\(deb.*stable main\)$@#\1\ndeb https://mirrors.tuna.tsinghua.edu.cn/termux/termux-packages-24 stable main@' $PREFIX/etc/apt/sources.list sed -i 's@^\(deb.*games stable\)$@#\1\ndeb https://mirrors.tuna.tsinghua.edu.cn/termux/game-packages-24 games stable@' $PREFIX/etc/apt/sources.list.d/game.list sed -i 's@^\(deb.*science stable\)$@#\1\ndeb https://mirrors.tuna.tsinghua.edu.cn/termux/science-packages-24 science stable@' $PREFIX/etc/apt/sources.list.d/science.list apt update && apt upgrade 安装虚拟机
-# ubuntu pkg install wget openssl-tool proot -y && hash -r && wget https://raw.githubusercontent.com/EXALAB/AnLinux-Resources/master/Scripts/Installer/Ubuntu/ubuntu.sh && bash ubuntu.sh # kali Linux pkg install wget openssl-tool proot -y && hash -r && wget https://raw....</p></section><footer class=entry-footer><span title="2022-03-02 00:00:00 +0000 UTC">March 2, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;编程笔记本</footer><a class=entry-link aria-label="post link to 安装Termux后要做的" href=https://javabullshit.github.io/posts/termux/></a>
 </article><footer class=page-footer>
 <nav class=pagination>
 <a class=prev href=https://javabullshit.github.io/posts/page/2/>« Prev Page</a>
+<a class=next href=https://javabullshit.github.io/posts/page/4/>Next Page »</a>
 </nav></footer></main><footer class=footer>
 <span>&copy; 2022 <a href=https://javabullshit.github.io>编程笔记本</a></span>
 </footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>

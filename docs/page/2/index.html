@@ -60,6 +60,14 @@
 </li></ul></nav></header><main class=main>
 <article class=post-entry>
 <header class=entry-header>
+<h2>制定类：更多的魔法方法
+</h2></header><section class=entry-content>
+<p>官方文档： https://docs.python.org/3/reference/datamodel.html#special-method-names
+中文： https://docs.python.org/zh-cn/3/reference/datamodel.html#special-method-names
+__get__ class aa(): def __get__(self): return self.name class bb(): def __init__(self): self.ca=aa() b=bb() print(b.ca) output:
+&lt;__main__.aa object at 0x7e3992d570> </p></section><footer class=entry-footer><span title="2022-03-16 06:52:22 +0000 UTC">March 16, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;编程笔记本</footer><a class=entry-link aria-label="post link to 制定类：更多的魔法方法" href=https://javabullshit.github.io/posts/magic-methods/></a>
+</article><article class=post-entry>
+<header class=entry-header>
 <h2>把类当成方法使用
 </h2></header><section class=entry-content>
 <p>class people(): def __init__(self,name): self.name=name def __call__(self): print("my name is {0.name}".format(self)) me=people("john") me() output:
@@ -83,13 +91,6 @@ __init__ run </p></section><footer class=entry-footer><span title="2022-03-14 14
 </h2></header><section class=entry-content>
 <p>import threading import time lock=threading.Lock() def p(s): lock.acquire() for i in range(0,3): print(s) time.sleep(1) lock.release() t1=threading.Thread(target=p,args=("t1",)) t2=threading.Thread(target=p,args=("t2",)) t1.start() t2.start() output:
 t1 t1 t1 t2 t2 t2 </p></section><footer class=entry-footer><span title="2022-03-14 13:55:39 +0000 UTC">March 14, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;编程笔记本</footer><a class=entry-link aria-label="post link to 线程🔒" href=https://javabullshit.github.io/posts/threading-lock/></a>
-</article><article class=post-entry>
-<header class=entry-header>
-<h2>MVC Pattern in Python
-</h2></header><section class=entry-content>
-<p>MVC Example module:
-class QuoteModel: def get_quote(self, n): try: value = quote[n] except: value = "Not found!" return value view:
-class QuoteTerminalController: def show(self, quote): print("") 未完结</p></section><footer class=entry-footer><span title="2022-03-13 10:32:23 +0000 UTC">March 13, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;编程笔记本</footer><a class=entry-link aria-label="post link to MVC Pattern in Python" href=https://javabullshit.github.io/posts/mvc-pattern-in-python/></a>
 </article><footer class=page-footer>
 <nav class=pagination>
 <a class=prev href=https://javabullshit.github.io/>« Prev Page</a>
