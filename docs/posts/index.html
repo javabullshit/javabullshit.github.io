@@ -62,7 +62,7 @@
 <h2>`__new__`的使用
 </h2></header><section class=entry-content>
 <p>准确来说，__new__才是构造函数 __new__执行在__init__之前 如果__new__不返回一个cls实例，则__init__不会被执行 class A(): def __new__(self,*args,**kwargs): print("new") return object.__new__(self) def __init__(self): print("init") a=A() output:
-new init 单例模式可以用__new__来实现： https://javabullshit.github.io/posts/singleton/</p></section><footer class=entry-footer><span title="2022-03-17 09:07:34 +0000 UTC">March 17, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;编程笔记本</footer><a class=entry-link aria-label="post link to `__new__`的使用" href=https://javabullshit.github.io/posts/__new__/></a>
+new init 单例模式可以用__new__来实现： https://javabullshit.github.io/posts/singleton/</p></section><footer class=entry-footer><span title="2022-03-17 09:07:34 +0000 UTC">March 17, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;编程笔记本</footer><a class=entry-link aria-label="post link to `__new__`的使用" href=https://javabullshit.github.io/posts/python-new/></a>
 </article><article class=post-entry>
 <header class=entry-header>
 <h2>python反射
