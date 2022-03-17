@@ -60,6 +60,12 @@
 </li></ul></nav></header><main class=main>
 <article class=post-entry>
 <header class=entry-header>
+<h2>线程🔒
+</h2></header><section class=entry-content>
+<p>import threading import time lock=threading.Lock() def p(s): lock.acquire() for i in range(0,3): print(s) time.sleep(1) lock.release() t1=threading.Thread(target=p,args=("t1",)) t2=threading.Thread(target=p,args=("t2",)) t1.start() t2.start() output:
+t1 t1 t1 t2 t2 t2 </p></section><footer class=entry-footer><span title="2022-03-14 13:55:39 +0000 UTC">March 14, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;编程笔记本</footer><a class=entry-link aria-label="post link to 线程🔒" href=https://javabullshit.github.io/posts/threading-lock/></a>
+</article><article class=post-entry>
+<header class=entry-header>
 <h2>MVC Pattern in Python
 </h2></header><section class=entry-content>
 <p>MVC Example module:
@@ -92,11 +98,6 @@ Valine: 传统的昵称、邮箱、网址式 utterances: github登录评论，�
 页内超链接新标签页打开 需要修改主题文件夹中的3个文件
 head.html post.html page.html 在&lt;body>之前加入javascript代码：
 &lt;script type="text/javascript"> function addaTarget(id) { var aTags = document.getElementById(id).getElementsByTagName("a"); for (i = 0; i &lt; aTags....</p></section><footer class=entry-footer><span title="2022-03-02 10:50:27 +0000 UTC">March 2, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;编程笔记本</footer><a class=entry-link aria-label="post link to Hugo笔记" href=https://javabullshit.github.io/posts/hugo/></a>
-</article><article class=post-entry>
-<header class=entry-header>
-<h2>Git常用
-</h2></header><section class=entry-content>
-<p>初始化 # 以当前目录为项目创建仓库 git init # 创建一个目录作为项目仓库 git init [name] 提交至暂存区 git add [file] git commit -m [msg] 分支 # 创建分支 git branch [name] # 查看分支，-r：远程分支，-a：所有分支 git branch 参数 # 切换分支 git checkout 分支名 # 删除本地分支 git branch -d [BranchName] # 删除远程分支 git push origin --delete [BranchName] 同步 # 添加远程仓库 git remote add [仓库] [仓库url] # 同步 git push [仓库] [分支] # 同步到本地 git pull [仓库] [分支] 其他 加上--global表示全局，不加就仅针对当前项目...</p></section><footer class=entry-footer><span title="2022-03-02 00:00:00 +0000 UTC">March 2, 2022</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;编程笔记本</footer><a class=entry-link aria-label="post link to Git常用" href=https://javabullshit.github.io/posts/git/></a>
 </article><footer class=page-footer>
 <nav class=pagination>
 <a class=prev href=https://javabullshit.github.io/page/2/>« Prev Page</a>
