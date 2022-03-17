@@ -63,7 +63,42 @@
 <h1>PHP是世界上最好的语言 🤗</h1></header><section class=entry-content>
 <p>因为PHP是有史以来最好的语言，没有之一。它快速，非常强大，而且免费。</p></section><footer class=entry-footer>
 <div class=social-icons>
-</div></footer></article></main><footer class=footer>
+</div></footer></article><article class=post-entry>
+<header class=entry-header>
+<h2>`__new__`的使用
+</h2></header><section class=entry-content>
+<p>准确来说，__new__才是构造函数 __new__执行在__init__之前 如果__new__不返回一个cls实例，则__init__不会被执行 class A(): def __new__(self,*args,**kwargs): print("new") return object.__new__(self) def __init__(self): print("init") a=A() output:
+new init 单例模式可以用__new__来实现： https://javabullshit.github.io/posts/singleton/</p></section><footer class=entry-footer><span title="2022-03-17 09:07:34 +0000 UTC">March 17, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;编程笔记本</footer><a class=entry-link aria-label="post link to `__new__`的使用" href=https://javabullshit.github.io/posts/__new__/></a>
+</article><article class=post-entry>
+<header class=entry-header>
+<h2>python反射
+</h2></header><section class=entry-content>
+<p>class Website(): def index(self): print("index page") def archive(self): print("archive page") def about(self): print("about page") site = Website() while True: chioose = input("请选择页面：") if hasattr(site, chioose): f = getattr(site, chioose) f() elif chioose == "exit": break else: print("404") output:
+请选择页面：about about page 请选择页面：index index page 请选择页面：hjki 404 请选择页面：exit </p></section><footer class=entry-footer><span title="2022-03-17 08:49:57 +0000 UTC">March 17, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;编程笔记本</footer><a class=entry-link aria-label="post link to python反射" href=https://javabullshit.github.io/posts/reflection/></a>
+</article><article class=post-entry>
+<header class=entry-header>
+<h2>python中的多态
+</h2></header><section class=entry-content>
+<p>python的多态支持非常有限 不知道这是不是对的
+class Human(): def eat(self): print("人类进食") class Animal(): def eat(self): print("动物进食") def eat(ojb): ojb.eat() h, a = Human(), Animal() for i in [h, a]: eat(i) output:
+人类进食 动物进食 </p></section><footer class=entry-footer><span title="2022-03-17 08:26:56 +0000 UTC">March 17, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;编程笔记本</footer><a class=entry-link aria-label="post link to python中的多态" href=https://javabullshit.github.io/posts/polymorphism/></a>
+</article><article class=post-entry>
+<header class=entry-header>
+<h2>Python单例模式
+</h2></header><section class=entry-content>
+<p>class A(): __instance = None # __flag作为私有的静态变量用于防止init多次执行 __flag = False def __new__(cls, *args, **kwargs): print("new") if cls.__instance is None: cls.__instance = super().__new__(cls) return cls.__instance # 如果 __new__() 未返回一个 cls 的实例，则新实例的 __init__() 方法就不会被执行。 def __init__(self): if not A.__flag: print("init只会执行一次") A.__flag = True a = A() b = A() print(a) print(b) output:
+new init只会执行一次 new &lt;__main__....</p></section><footer class=entry-footer><span title="2022-03-17 08:19:26 +0000 UTC">March 17, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;编程笔记本</footer><a class=entry-link aria-label="post link to Python单例模式" href=https://javabullshit.github.io/posts/singleton/></a>
+</article><article class=post-entry>
+<header class=entry-header>
+<h2>抽象类
+</h2></header><section class=entry-content>
+<p>抽象类不可实例化，被abstractclassmethod修饰的函数必须重写
+from abc import ABCMeta,abstractclassmethod class A(metaclass=ABCMeta): def __init__(self): pass @abstractclassmethod def say(self,s): pass class B(A): def __init__(self): pass def say(self,s): print(s) b=B() b.say("hello") output:
+hello </p></section><footer class=entry-footer><span title="2022-03-17 06:27:09 +0000 UTC">March 17, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;编程笔记本</footer><a class=entry-link aria-label="post link to 抽象类" href=https://javabullshit.github.io/posts/abstract-class/></a>
+</article><footer class=page-footer>
+<nav class=pagination>
+<a class=next href=https://javabullshit.github.io/page/2/>Next Page »</a>
+</nav></footer></main><footer class=footer>
 <span>&copy; 2022 <a href=https://javabullshit.github.io>编程笔记本</a></span>
 </footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
 </a>
