@@ -59,6 +59,12 @@
 </li></ul></nav></header><main class=main>
 <header class=page-header><div class=breadcrumbs><a href=https://javabullshit.github.io>Home</a></div><h1>Posts</h1></header><article class=post-entry>
 <header class=entry-header>
+<h2>`__new__`的使用
+</h2></header><section class=entry-content>
+<p>准确来说，__new__才是构造函数 __new__执行在__init__之前 如果__new__不返回一个cls实例，则__init__不会被执行 class A(): def __new__(self,*args,**kwargs): print("new") return object.__new__(self) def __init__(self): print("init") a=A() output:
+new init 单例模式可以用__new__来实现： https://javabullshit.github.io/posts/singleton/</p></section><footer class=entry-footer><span title="2022-03-17 09:07:34 +0000 UTC">March 17, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;编程笔记本</footer><a class=entry-link aria-label="post link to `__new__`的使用" href=https://javabullshit.github.io/posts/__new__/></a>
+</article><article class=post-entry>
+<header class=entry-header>
 <h2>python反射
 </h2></header><section class=entry-content>
 <p>class Website(): def index(self): print("index page") def archive(self): print("archive page") def about(self): print("about page") site = Website() while True: chioose = input("请选择页面：") if hasattr(site, chioose): f = getattr(site, chioose) f() elif chioose == "exit": break else: print("404") output:
@@ -83,12 +89,6 @@ new init只会执行一次 new &lt;__main__....</p></section><footer class=entry
 <p>抽象类不可实例化，被abstractclassmethod修饰的函数必须重写
 from abc import ABCMeta,abstractclassmethod class A(metaclass=ABCMeta): def __init__(self): pass @abstractclassmethod def say(self,s): pass class B(A): def __init__(self): pass def say(self,s): print(s) b=B() b.say("hello") output:
 hello </p></section><footer class=entry-footer><span title="2022-03-17 06:27:09 +0000 UTC">March 17, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;编程笔记本</footer><a class=entry-link aria-label="post link to 抽象类" href=https://javabullshit.github.io/posts/abstract-class/></a>
-</article><article class=post-entry>
-<header class=entry-header>
-<h2>property与setter：属性管理
-</h2></header><section class=entry-content>
-<p>class people(): def __init__(self,name): self.__name=name @property def name(self): return self.__name @name.setter def name(self,name): if not isinstance(name,str): raise TypeError('expected a string') self.__name=name me=people("john") print(me.name) me.name="tony" print(me.name) output:
-john tony </p></section><footer class=entry-footer><span title="2022-03-16 18:36:23 +0000 UTC">March 16, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;编程笔记本</footer><a class=entry-link aria-label="post link to property与setter：属性管理" href=https://javabullshit.github.io/posts/property-management/></a>
 </article><footer class=page-footer>
 <nav class=pagination>
 <a class=next href=https://javabullshit.github.io/posts/page/2/>Next Page »</a>

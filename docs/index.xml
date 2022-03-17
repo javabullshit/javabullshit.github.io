@@ -9,7 +9,17 @@
       <link>https://javabullshit.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 17 Mar 2022 08:49:57 +0000</lastBuildDate><atom:link href="https://javabullshit.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 17 Mar 2022 09:07:34 +0000</lastBuildDate><atom:link href="https://javabullshit.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>`__new__`的使用</title>
+      <link>https://javabullshit.github.io/posts/__new__/</link>
+      <pubDate>Thu, 17 Mar 2022 09:07:34 +0000</pubDate>
+      
+      <guid>https://javabullshit.github.io/posts/__new__/</guid>
+      <description>准确来说，__new__才是构造函数 __new__执行在__init__之前 如果__new__不返回一个cls实例，则__init__不会被执行  class A():  def __new__(self,*args,**kwargs):  print(&amp;#34;new&amp;#34;)  return object.__new__(self)  def __init__(self):  print(&amp;#34;init&amp;#34;)  a=A() output:
+new init 单例模式可以用__new__来实现： https://javabullshit.github.io/posts/singleton/</description>
+    </item>
+    
     <item>
       <title>python反射</title>
       <link>https://javabullshit.github.io/posts/reflection/</link>
