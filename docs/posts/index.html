@@ -59,6 +59,13 @@
 </li></ul></nav></header><main class=main>
 <header class=page-header><div class=breadcrumbs><a href=https://javabullshit.github.io>Home</a></div><h1>Posts</h1></header><article class=post-entry>
 <header class=entry-header>
+<h2>python中的多态
+</h2></header><section class=entry-content>
+<p>python的多态支持非常有限 不知道这是不是对的
+class Human(): def eat(self): print("人类进食") class Animal(): def eat(self): print("动物进食") def eat(ojb): ojb.eat() h, a = Human(), Animal() for i in [h, a]: eat(i) output:
+人类进食 动物进食 </p></section><footer class=entry-footer><span title="2022-03-17 08:26:56 +0000 UTC">March 17, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;编程笔记本</footer><a class=entry-link aria-label="post link to python中的多态" href=https://javabullshit.github.io/posts/polymorphism/></a>
+</article><article class=post-entry>
+<header class=entry-header>
 <h2>Python单例模式
 </h2></header><section class=entry-content>
 <p>class A(): __instance = None # __flag作为私有的静态变量用于防止init多次执行 __flag = False def __new__(cls, *args, **kwargs): print("new") if cls.__instance is None: cls.__instance = super().__new__(cls) return cls.__instance # 如果 __new__() 未返回一个 cls 的实例，则新实例的 __init__() 方法就不会被执行。 def __init__(self): if not A.__flag: print("init只会执行一次") A.__flag = True a = A() b = A() print(a) print(b) output:
@@ -82,12 +89,6 @@ john tony </p></section><footer class=entry-footer><span title="2022-03-16 18:36
 </h2></header><section class=entry-content>
 <p>class people(): def __init__(self,name): self.__name=name def __enter__(self): print('enter') def __exit__(self,exc_ty, exc_val, tb): print('exit') def say(self,s): print(s) me=people("john") with me: me.say('hello') output:
 enter hello exit </p></section><footer class=entry-footer><span title="2022-03-16 18:13:02 +0000 UTC">March 16, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;编程笔记本</footer><a class=entry-link aria-label="post link to Python上下文管理" href=https://javabullshit.github.io/posts/python-__enter__-and-__exit__/></a>
-</article><article class=post-entry>
-<header class=entry-header>
-<h2>缩短你的垃圾🐔代码
-</h2></header><section class=entry-content>
-<p>L = [] n = 1 while n &lt;= 99: L.append(n) n = n + 2 可用下面多种方法实现缩短:
-[i for i in range(1,100,2)] list(range(1, 100, 2)) list(range(1, 100))[::2] list(range(1, 100)[::2]) list(range(100))[1::2] [2*x-1 for x in range(1,51)] </p></section><footer class=entry-footer><span title="2022-03-16 13:27:29 +0000 UTC">March 16, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;编程笔记本</footer><a class=entry-link aria-label="post link to 缩短你的垃圾🐔代码" href=https://javabullshit.github.io/posts/abbreviation/></a>
 </article><footer class=page-footer>
 <nav class=pagination>
 <a class=next href=https://javabullshit.github.io/posts/page/2/>Next Page »</a>

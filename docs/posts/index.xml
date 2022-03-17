@@ -9,7 +9,18 @@
       <link>https://javabullshit.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 17 Mar 2022 08:19:26 +0000</lastBuildDate><atom:link href="https://javabullshit.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 17 Mar 2022 08:26:56 +0000</lastBuildDate><atom:link href="https://javabullshit.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>python中的多态</title>
+      <link>https://javabullshit.github.io/posts/polymorphism/</link>
+      <pubDate>Thu, 17 Mar 2022 08:26:56 +0000</pubDate>
+      
+      <guid>https://javabullshit.github.io/posts/polymorphism/</guid>
+      <description>python的多态支持非常有限 不知道这是不是对的
+class Human():  def eat(self):  print(&amp;#34;人类进食&amp;#34;)   class Animal():  def eat(self):  print(&amp;#34;动物进食&amp;#34;)   def eat(ojb):  ojb.eat()   h, a = Human(), Animal() for i in [h, a]:  eat(i) output:
+人类进食 动物进食 </description>
+    </item>
+    
     <item>
       <title>Python单例模式</title>
       <link>https://javabullshit.github.io/posts/singleton/</link>
