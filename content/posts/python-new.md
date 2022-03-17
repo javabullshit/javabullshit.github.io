@@ -17,7 +17,6 @@ class A():
 
 a=A()
 ```
-
 output:
 ```bash
 new
