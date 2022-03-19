@@ -60,6 +60,13 @@
 </li></ul></nav></header><main class=main>
 <article class=post-entry>
 <header class=entry-header>
+<h2>抽象类
+</h2></header><section class=entry-content>
+<p>抽象类不可实例化，被abstractclassmethod修饰的函数必须重写
+from abc import ABCMeta,abstractclassmethod class A(metaclass=ABCMeta): def __init__(self): pass @abstractclassmethod def say(self,s): pass class B(A): def __init__(self): pass def say(self,s): print(s) b=B() b.say("hello") output:
+hello </p></section><footer class=entry-footer><span title="2022-03-17 06:27:09 +0000 UTC">March 17, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;编程笔记本</footer><a class=entry-link aria-label="post link to 抽象类" href=https://javabullshit.github.io/posts/abstract-class/></a>
+</article><article class=post-entry>
+<header class=entry-header>
 <h2>property与setter：属性管理
 </h2></header><section class=entry-content>
 <p>class people(): def __init__(self,name): self.__name=name @property def name(self): return self.__name @name.setter def name(self,name): if not isinstance(name,str): raise TypeError('expected a string') self.__name=name me=people("john") print(me.name) me.name="tony" print(me.name) output:
@@ -85,14 +92,6 @@ server.py:
 import socket s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM) # 绑定端口: s.bind(('127.0.0.1', 9999)) print('Bind UDP on 9999...') while True: # 接收数据: data, addr = s.recvfrom(1024) print('Received from %s:%s.' % addr) s.sendto(b'Hello, %s!' % data, addr) client.py:
 import socket s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM) for data in [b'Michael', b'Tracy', b'Sarah']: # 发送数据: s.sendto(data, ('127.0.0.1', 9999)) # 接收数据: print(s.recv(1024).decode('utf-8')) s.close() output:
 Hello, Michael! Hello, Tracy! Hello, Sarah!...</p></section><footer class=entry-footer><span title="2022-03-16 07:26:07 +0000 UTC">March 16, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;编程笔记本</footer><a class=entry-link aria-label="post link to python UDP" href=https://javabullshit.github.io/posts/udp/></a>
-</article><article class=post-entry>
-<header class=entry-header>
-<h2>制定类：更多的魔法方法
-</h2></header><section class=entry-content>
-<p>官方文档： https://docs.python.org/3/reference/datamodel.html#special-method-names
-中文： https://docs.python.org/zh-cn/3/reference/datamodel.html#special-method-names
-__get__ class aa(): def __get__(self): return self.name class bb(): def __init__(self): self.ca=aa() b=bb() print(b.ca) output:
-&lt;__main__.aa object at 0x7e3992d570> </p></section><footer class=entry-footer><span title="2022-03-16 06:52:22 +0000 UTC">March 16, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;编程笔记本</footer><a class=entry-link aria-label="post link to 制定类：更多的魔法方法" href=https://javabullshit.github.io/posts/magic-methods/></a>
 </article><footer class=page-footer>
 <nav class=pagination>
 <a class=prev href=https://javabullshit.github.io/>« Prev Page</a>

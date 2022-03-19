@@ -60,41 +60,16 @@
 </li></ul></nav></header><main class=main>
 <article class=post-entry>
 <header class=entry-header>
-<h2>制定类：更多的魔法方法
+<h2>安装Termux后要做的
 </h2></header><section class=entry-content>
-<p>官方文档： https://docs.python.org/3/reference/datamodel.html#special-method-names
-中文： https://docs.python.org/zh-cn/3/reference/datamodel.html#special-method-names
-__get__ class aa(): def __get__(self): return self.name class bb(): def __init__(self): self.ca=aa() b=bb() print(b.ca) output:
-&lt;__main__.aa object at 0x7e3992d570> </p></section><footer class=entry-footer><span title="2022-03-16 06:52:22 +0000 UTC">March 16, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;编程笔记本</footer><a class=entry-link aria-label="post link to 制定类：更多的魔法方法" href=https://javabullshit.github.io/posts/magic-methods/></a>
-</article><article class=post-entry>
-<header class=entry-header>
-<h2>把类当成方法使用
-</h2></header><section class=entry-content>
-<p>class people(): def __init__(self,name): self.name=name def __call__(self): print("my name is {0.name}".format(self)) me=people("john") me() output:
-my name is john </p></section><footer class=entry-footer><span title="2022-03-16 06:43:43 +0000 UTC">March 16, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;编程笔记本</footer><a class=entry-link aria-label="post link to 把类当成方法使用" href=https://javabullshit.github.io/posts/use-class-ass-a-method/></a>
-</article><article class=post-entry>
-<header class=entry-header>
-<h2>给类的实例绑定方法
-</h2></header><section class=entry-content>
-<p>from types import MethodType class people(): def __init__(self): print("cls") def eat(self,shit): print("I'm eating "+shit) def say(self,shit): print(shit) you=people() me=people() # 仅给单个实例绑定方法 you.eat=MethodType(eat,you) you.eat("shit") # 给所有实例绑定方法 people.say=MethodType(say,people) you.say("f**k.") me.say("f**k you!") output:
-cls cls I'm eating shit f**k. f**k you! </p></section><footer class=entry-footer><span title="2022-03-15 07:47:50 +0000 UTC">March 15, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;编程笔记本</footer><a class=entry-link aria-label="post link to 给类的实例绑定方法" href=https://javabullshit.github.io/posts/binding-method-for-instance/></a>
-</article><article class=post-entry>
-<header class=entry-header>
-<h2>重✍️线程构造方法
-</h2></header><section class=entry-content>
-<p>继承于threading，重写构造方法：
-import threading class th(threading.Thread): def __init__(self): threading.Thread.__init__(self) print("__init__") def run(self): print("run") t=th() t.start() t.join() output:
-__init__ run </p></section><footer class=entry-footer><span title="2022-03-14 14:00:45 +0000 UTC">March 14, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;编程笔记本</footer><a class=entry-link aria-label="post link to 重✍️线程构造方法" href=https://javabullshit.github.io/posts/rewrite-methods-in-threading/></a>
-</article><article class=post-entry>
-<header class=entry-header>
-<h2>线程🔒
-</h2></header><section class=entry-content>
-<p>import threading import time lock=threading.Lock() def p(s): lock.acquire() for i in range(0,3): print(s) time.sleep(1) lock.release() t1=threading.Thread(target=p,args=("t1",)) t2=threading.Thread(target=p,args=("t2",)) t1.start() t2.start() output:
-t1 t1 t1 t2 t2 t2 </p></section><footer class=entry-footer><span title="2022-03-14 13:55:39 +0000 UTC">March 14, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;编程笔记本</footer><a class=entry-link aria-label="post link to 线程🔒" href=https://javabullshit.github.io/posts/threading-lock/></a>
+<p>键盘方案
+extra-keys = [ \ ['ESC','|','/','F5','[','UP',']','`','{','&lt;'], \ ['TAB','CTRL','=','ALT','LEFT','DOWN','RIGHT','PGDN','}','>'] \ ] zsh
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" 国内源
+sed -i 's@^\(deb.*stable main\)$@#\1\ndeb https://mirrors.tuna.tsinghua.edu.cn/termux/termux-packages-24 stable main@' $PREFIX/etc/apt/sources.list sed -i 's@^\(deb.*games stable\)$@#\1\ndeb https://mirrors.tuna.tsinghua.edu.cn/termux/game-packages-24 games stable@' $PREFIX/etc/apt/sources.list.d/game.list sed -i 's@^\(deb.*science stable\)$@#\1\ndeb https://mirrors.tuna.tsinghua.edu.cn/termux/science-packages-24 science stable@' $PREFIX/etc/apt/sources.list.d/science.list apt update && apt upgrade 安装虚拟机
+# ubuntu pkg install wget openssl-tool proot -y && hash -r && wget https://raw.githubusercontent.com/EXALAB/AnLinux-Resources/master/Scripts/Installer/Ubuntu/ubuntu.sh && bash ubuntu.sh # kali Linux pkg install wget openssl-tool proot -y && hash -r && wget https://raw....</p></section><footer class=entry-footer><span title="2022-03-02 00:00:00 +0000 UTC">March 2, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;编程笔记本</footer><a class=entry-link aria-label="post link to 安装Termux后要做的" href=https://javabullshit.github.io/posts/termux/></a>
 </article><footer class=page-footer>
 <nav class=pagination>
-<a class=prev href=https://javabullshit.github.io/page/2/>« Prev Page</a>
-<a class=next href=https://javabullshit.github.io/page/4/>Next Page »</a>
+<a class=prev href=https://javabullshit.github.io/page/4/>« Prev Page</a>
 </nav></footer></main><footer class=footer>
 <span>&copy; 2022 <a href=https://javabullshit.github.io>编程笔记本</a></span>
 </footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>

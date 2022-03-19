@@ -52,6 +52,17 @@ new init只会执行一次 new &amp;lt;__main__.</description>
     </item>
     
     <item>
+      <title>装饰器、修饰符</title>
+      <link>https://javabullshit.github.io/posts/decorator/</link>
+      <pubDate>Thu, 17 Mar 2022 06:38:22 +0000</pubDate>
+      
+      <guid>https://javabullshit.github.io/posts/decorator/</guid>
+      <description>装饰器 import time  def counttime(func):  def test(*args):  start_time=time.time()  end_time=time.time()  func(*args)  total_time=end_time-start_time  print(&amp;#34;total:{0:.2}s&amp;#34;.format(total_time))  return test  @counttime def printer(s):  for i in range(10000):print(s)  print(&amp;#34;start&amp;#34;) printer(&amp;#34;hello&amp;#34;) @classmethod 无需实例化即可调用，实例不可用
+class C(object):  @classmethod  def f():  print(&amp;#39;hello&amp;#39;); C.f() @staticmethod 无需实例化即可调用，实例化后仍然可用
+class C(object):  @staticmethod  def f():  print(&amp;#39;hello&amp;#39;); C.f() c=C() c.f() </description>
+    </item>
+    
+    <item>
       <title>抽象类</title>
       <link>https://javabullshit.github.io/posts/abstract-class/</link>
       <pubDate>Thu, 17 Mar 2022 06:27:09 +0000</pubDate>

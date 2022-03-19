@@ -84,11 +84,11 @@ class Human(): def eat(self): print("人类进食") class Animal(): def eat(self
 new init只会执行一次 new &lt;__main__....</p></section><footer class=entry-footer><span title="2022-03-17 08:19:26 +0000 UTC">March 17, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;编程笔记本</footer><a class=entry-link aria-label="post link to Python单例模式" href=https://javabullshit.github.io/posts/singleton/></a>
 </article><article class=post-entry>
 <header class=entry-header>
-<h2>抽象类
+<h2>装饰器、修饰符
 </h2></header><section class=entry-content>
-<p>抽象类不可实例化，被abstractclassmethod修饰的函数必须重写
-from abc import ABCMeta,abstractclassmethod class A(metaclass=ABCMeta): def __init__(self): pass @abstractclassmethod def say(self,s): pass class B(A): def __init__(self): pass def say(self,s): print(s) b=B() b.say("hello") output:
-hello </p></section><footer class=entry-footer><span title="2022-03-17 06:27:09 +0000 UTC">March 17, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;编程笔记本</footer><a class=entry-link aria-label="post link to 抽象类" href=https://javabullshit.github.io/posts/abstract-class/></a>
+<p>装饰器 import time def counttime(func): def test(*args): start_time=time.time() end_time=time.time() func(*args) total_time=end_time-start_time print("total:{0:.2}s".format(total_time)) return test @counttime def printer(s): for i in range(10000):print(s) print("start") printer("hello") @classmethod 无需实例化即可调用，实例不可用
+class C(object): @classmethod def f(): print('hello'); C.f() @staticmethod 无需实例化即可调用，实例化后仍然可用
+class C(object): @staticmethod def f(): print('hello'); C.f() c=C() c.f() </p></section><footer class=entry-footer><span title="2022-03-17 06:38:22 +0000 UTC">March 17, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;编程笔记本</footer><a class=entry-link aria-label="post link to 装饰器、修饰符" href=https://javabullshit.github.io/posts/decorator/></a>
 </article><footer class=page-footer>
 <nav class=pagination>
 <a class=next href=https://javabullshit.github.io/posts/page/2/>Next Page »</a>
