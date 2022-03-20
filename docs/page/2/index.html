@@ -60,6 +60,13 @@
 </li></ul></nav></header><main class=main>
 <article class=post-entry>
 <header class=entry-header>
+<h2>装饰器、修饰符
+</h2></header><section class=entry-content>
+<p>装饰器 import time def counttime(func): def test(*args): start_time=time.time() end_time=time.time() func(*args) total_time=end_time-start_time print("total:{0:.2}s".format(total_time)) return test @counttime def printer(s): for i in range(10000):print(s) print("start") printer("hello") @classmethod 无需实例化即可调用，实例不可用
+class C(object): @classmethod def f(): print('hello'); C.f() @staticmethod 无需实例化即可调用，实例化后仍然可用
+class C(object): @staticmethod def f(): print('hello'); C.f() c=C() c.f() </p></section><footer class=entry-footer><span title="2022-03-17 06:38:22 +0000 UTC">March 17, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;编程笔记本</footer><a class=entry-link aria-label="post link to 装饰器、修饰符" href=https://javabullshit.github.io/posts/decorator/></a>
+</article><article class=post-entry>
+<header class=entry-header>
 <h2>抽象类
 </h2></header><section class=entry-content>
 <p>抽象类不可实例化，被abstractclassmethod修饰的函数必须重写
@@ -83,15 +90,6 @@ enter hello exit </p></section><footer class=entry-footer><span title="2022-03-1
 </h2></header><section class=entry-content>
 <p>L = [] n = 1 while n &lt;= 99: L.append(n) n = n + 2 可用下面多种方法实现缩短:
 [i for i in range(1,100,2)] list(range(1, 100, 2)) list(range(1, 100))[::2] list(range(1, 100)[::2]) list(range(100))[1::2] [2*x-1 for x in range(1,51)] </p></section><footer class=entry-footer><span title="2022-03-16 13:27:29 +0000 UTC">March 16, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;编程笔记本</footer><a class=entry-link aria-label="post link to 缩短你的垃圾🐔代码" href=https://javabullshit.github.io/posts/abbreviation/></a>
-</article><article class=post-entry>
-<header class=entry-header>
-<h2>python UDP
-</h2></header><section class=entry-content>
-<p>注意一点，socket.socket()的括号里不能像tcp一样为空
-server.py:
-import socket s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM) # 绑定端口: s.bind(('127.0.0.1', 9999)) print('Bind UDP on 9999...') while True: # 接收数据: data, addr = s.recvfrom(1024) print('Received from %s:%s.' % addr) s.sendto(b'Hello, %s!' % data, addr) client.py:
-import socket s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM) for data in [b'Michael', b'Tracy', b'Sarah']: # 发送数据: s.sendto(data, ('127.0.0.1', 9999)) # 接收数据: print(s.recv(1024).decode('utf-8')) s.close() output:
-Hello, Michael! Hello, Tracy! Hello, Sarah!...</p></section><footer class=entry-footer><span title="2022-03-16 07:26:07 +0000 UTC">March 16, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;编程笔记本</footer><a class=entry-link aria-label="post link to python UDP" href=https://javabullshit.github.io/posts/udp/></a>
 </article><footer class=page-footer>
 <nav class=pagination>
 <a class=prev href=https://javabullshit.github.io/>« Prev Page</a>

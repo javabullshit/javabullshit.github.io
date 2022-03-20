@@ -59,6 +59,11 @@
 </li></ul></nav></header><main class=main>
 <header class=page-header><div class=breadcrumbs><a href=https://javabullshit.github.io>Home</a></div><h1>Posts</h1></header><article class=post-entry>
 <header class=entry-header>
+<h2>用Json将字典格式化输出
+</h2></header><section class=entry-content>
+<p>data=json.dumps(字典,indent=4,sort_keys=True) print(data) </p></section><footer class=entry-footer><span title="2022-03-20 05:25:27 +0000 UTC">March 20, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;编程笔记本</footer><a class=entry-link aria-label="post link to 用Json将字典格式化输出" href=https://javabullshit.github.io/posts/json/></a>
+</article><article class=post-entry>
+<header class=entry-header>
 <h2>`__new__`的使用
 </h2></header><section class=entry-content>
 <p>准确来说，__new__才是构造函数 __new__执行在__init__之前 如果__new__不返回一个cls实例，则__init__不会被执行 class A(): def __new__(self,*args,**kwargs): print("new") return object.__new__(self) def __init__(self): print("init") a=A() output:
@@ -82,13 +87,6 @@ class Human(): def eat(self): print("人类进食") class Animal(): def eat(self
 </h2></header><section class=entry-content>
 <p>class A(): __instance = None # __flag作为私有的静态变量用于防止init多次执行 __flag = False def __new__(cls, *args, **kwargs): print("new") if cls.__instance is None: cls.__instance = super().__new__(cls) return cls.__instance # 如果 __new__() 未返回一个 cls 的实例，则新实例的 __init__() 方法就不会被执行。 def __init__(self): if not A.__flag: print("init只会执行一次") A.__flag = True a = A() b = A() print(a) print(b) output:
 new init只会执行一次 new &lt;__main__....</p></section><footer class=entry-footer><span title="2022-03-17 08:19:26 +0000 UTC">March 17, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;编程笔记本</footer><a class=entry-link aria-label="post link to Python单例模式" href=https://javabullshit.github.io/posts/singleton/></a>
-</article><article class=post-entry>
-<header class=entry-header>
-<h2>装饰器、修饰符
-</h2></header><section class=entry-content>
-<p>装饰器 import time def counttime(func): def test(*args): start_time=time.time() end_time=time.time() func(*args) total_time=end_time-start_time print("total:{0:.2}s".format(total_time)) return test @counttime def printer(s): for i in range(10000):print(s) print("start") printer("hello") @classmethod 无需实例化即可调用，实例不可用
-class C(object): @classmethod def f(): print('hello'); C.f() @staticmethod 无需实例化即可调用，实例化后仍然可用
-class C(object): @staticmethod def f(): print('hello'); C.f() c=C() c.f() </p></section><footer class=entry-footer><span title="2022-03-17 06:38:22 +0000 UTC">March 17, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;编程笔记本</footer><a class=entry-link aria-label="post link to 装饰器、修饰符" href=https://javabullshit.github.io/posts/decorator/></a>
 </article><footer class=page-footer>
 <nav class=pagination>
 <a class=next href=https://javabullshit.github.io/posts/page/2/>Next Page »</a>
