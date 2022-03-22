@@ -17,14 +17,6 @@ url: "/about/"
 
 ### 📖计划中的任务
 
-> 2022-3-15~2022-4-30: 设计模式
+> 2022-3-15~2022-5-31: 
 
-所需相关资料：
- - 《精通python设计模式》
- - https://refactoringguru.cn/design-patterns
-
-> 2022-10-15: 函数式编程
-
-所需相关资料：
- - 《python函数式编程》
- - 《Python一行流》
+ - python基础
